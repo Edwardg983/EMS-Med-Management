@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6404AAA81EBE7AF300CC9B71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAA71EBE7AF300CC9B71 /* AppDelegate.swift */; };
+		6404AAAA1EBE7AF300CC9B71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAA91EBE7AF300CC9B71 /* ViewController.swift */; };
+		6404AAAD1EBE7AF300CC9B71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAAB1EBE7AF300CC9B71 /* Main.storyboard */; };
+		6404AAAF1EBE7AF300CC9B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAAE1EBE7AF300CC9B71 /* Assets.xcassets */; };
+		6404AAB21EBE7AF300CC9B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAB01EBE7AF300CC9B71 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6404AAC91EBE7C0300CC9B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6404AAC51EBE7C0300CC9B71 /* EMS-Med-Management.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 647DAC361E6F4B6500A25B9B;
+			remoteInfo = "EMS-Med-Management";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6404AAA41EBE7AF300CC9B71 /* TestMergingTwoProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMergingTwoProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6404AAA71EBE7AF300CC9B71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6404AAA91EBE7AF300CC9B71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6404AAAC1EBE7AF300CC9B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6404AAAE1EBE7AF300CC9B71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6404AAB11EBE7AF300CC9B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6404AAB31EBE7AF300CC9B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6404AAC51EBE7C0300CC9B71 /* EMS-Med-Management.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "EMS-Med-Management.xcodeproj"; path = "../EMS-Med-Management.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6404AAA11EBE7AF300CC9B71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6404AA9B1EBE7AF300CC9B71 = {
+			isa = PBXGroup;
+			children = (
+				6404AAC51EBE7C0300CC9B71 /* EMS-Med-Management.xcodeproj */,
+				6404AAA61EBE7AF300CC9B71 /* TestMergingTwoProjects */,
+				6404AAA51EBE7AF300CC9B71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6404AAA51EBE7AF300CC9B71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6404AAA41EBE7AF300CC9B71 /* TestMergingTwoProjects.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6404AAA61EBE7AF300CC9B71 /* TestMergingTwoProjects */ = {
+			isa = PBXGroup;
+			children = (
+				6404AAA71EBE7AF300CC9B71 /* AppDelegate.swift */,
+				6404AAA91EBE7AF300CC9B71 /* ViewController.swift */,
+				6404AAAB1EBE7AF300CC9B71 /* Main.storyboard */,
+				6404AAAE1EBE7AF300CC9B71 /* Assets.xcassets */,
+				6404AAB01EBE7AF300CC9B71 /* LaunchScreen.storyboard */,
+				6404AAB31EBE7AF300CC9B71 /* Info.plist */,
+			);
+			path = TestMergingTwoProjects;
+			sourceTree = "<group>";
+		};
+		6404AAC61EBE7C0300CC9B71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6404AACA1EBE7C0300CC9B71 /* EMS-Med-Management.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6404AAA31EBE7AF300CC9B71 /* TestMergingTwoProjects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6404AAB61EBE7AF300CC9B71 /* Build configuration list for PBXNativeTarget "TestMergingTwoProjects" */;
+			buildPhases = (
+				6404AAA01EBE7AF300CC9B71 /* Sources */,
+				6404AAA11EBE7AF300CC9B71 /* Frameworks */,
+				6404AAA21EBE7AF300CC9B71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMergingTwoProjects;
+			productName = TestMergingTwoProjects;
+			productReference = 6404AAA41EBE7AF300CC9B71 /* TestMergingTwoProjects.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6404AA9C1EBE7AF300CC9B71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Edward Greene";
+				TargetAttributes = {
+					6404AAA31EBE7AF300CC9B71 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T78D8LV7RN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6404AA9F1EBE7AF300CC9B71 /* Build configuration list for PBXProject "TestMergingTwoProjects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6404AA9B1EBE7AF300CC9B71;
+			productRefGroup = 6404AAA51EBE7AF300CC9B71 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6404AAC61EBE7C0300CC9B71 /* Products */;
+					ProjectRef = 6404AAC51EBE7C0300CC9B71 /* EMS-Med-Management.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6404AAA31EBE7AF300CC9B71 /* TestMergingTwoProjects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6404AACA1EBE7C0300CC9B71 /* EMS-Med-Management.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "EMS-Med-Management.app";
+			remoteRef = 6404AAC91EBE7C0300CC9B71 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6404AAA21EBE7AF300CC9B71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6404AAB21EBE7AF300CC9B71 /* LaunchScreen.storyboard in Resources */,
+				6404AAAF1EBE7AF300CC9B71 /* Assets.xcassets in Resources */,
+				6404AAAD1EBE7AF300CC9B71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6404AAA01EBE7AF300CC9B71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6404AAAA1EBE7AF300CC9B71 /* ViewController.swift in Sources */,
+				6404AAA81EBE7AF300CC9B71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6404AAAB1EBE7AF300CC9B71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6404AAAC1EBE7AF300CC9B71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6404AAB01EBE7AF300CC9B71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6404AAB11EBE7AF300CC9B71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6404AAB41EBE7AF300CC9B71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6404AAB51EBE7AF300CC9B71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6404AAB71EBE7AF300CC9B71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T78D8LV7RN;
+				INFOPLIST_FILE = TestMergingTwoProjects/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdwardGreene.TestMergingTwoProjects;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6404AAB81EBE7AF300CC9B71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T78D8LV7RN;
+				INFOPLIST_FILE = TestMergingTwoProjects/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdwardGreene.TestMergingTwoProjects;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6404AA9F1EBE7AF300CC9B71 /* Build configuration list for PBXProject "TestMergingTwoProjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6404AAB41EBE7AF300CC9B71 /* Debug */,
+				6404AAB51EBE7AF300CC9B71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6404AAB61EBE7AF300CC9B71 /* Build configuration list for PBXNativeTarget "TestMergingTwoProjects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6404AAB71EBE7AF300CC9B71 /* Debug */,
+				6404AAB81EBE7AF300CC9B71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6404AA9C1EBE7AF300CC9B71 /* Project object */;
+}
