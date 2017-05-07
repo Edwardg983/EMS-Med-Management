@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6404AAA81EBE7AF300CC9B71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAA71EBE7AF300CC9B71 /* AppDelegate.swift */; };
-		6404AAAA1EBE7AF300CC9B71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAA91EBE7AF300CC9B71 /* ViewController.swift */; };
-		6404AAAD1EBE7AF300CC9B71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAAB1EBE7AF300CC9B71 /* Main.storyboard */; };
-		6404AAAF1EBE7AF300CC9B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAAE1EBE7AF300CC9B71 /* Assets.xcassets */; };
-		6404AAB21EBE7AF300CC9B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAB01EBE7AF300CC9B71 /* LaunchScreen.storyboard */; };
+		6404AACC1EBE80CE00CC9B71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AACB1EBE80CE00CC9B71 /* AppDelegate.swift */; };
+		6404AACF1EBE80E800CC9B71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6404AACE1EBE80E800CC9B71 /* Main.storyboard */; };
+		6404AAD11EBE80F000CC9B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAD01EBE80F000CC9B71 /* Assets.xcassets */; };
+		6404AAD91EBE811500CC9B71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAD81EBE811500CC9B71 /* Info.plist */; };
+		6404AADB1EBE811A00CC9B71 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AADA1EBE811A00CC9B71 /* MyButton.swift */; };
+		6404AADD1EBE812300CC9B71 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AADC1EBE812300CC9B71 /* MainVC.swift */; };
+		6404AADF1EBE812800CC9B71 /* ListOfMedBoxesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AADE1EBE812800CC9B71 /* ListOfMedBoxesVC.swift */; };
+		6404AAE11EBE812F00CC9B71 /* ListOfTrucksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAE01EBE812F00CC9B71 /* ListOfTrucksVC.swift */; };
+		6404AAE31EBE813500CC9B71 /* MedInventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAE21EBE813500CC9B71 /* MedInventoryVC.swift */; };
+		6404AAE51EBE813C00CC9B71 /* MedUsedReplacedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAE41EBE813C00CC9B71 /* MedUsedReplacedVC.swift */; };
+		6404AAE71EBE814100CC9B71 /* OutdatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAE61EBE814100CC9B71 /* OutdatesVC.swift */; };
+		6404AAE91EBE814600CC9B71 /* TruckInventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404AAE81EBE814600CC9B71 /* TruckInventoryVC.swift */; };
+		6404AAEC1EBE817200CC9B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6404AAEB1EBE817200CC9B71 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,13 +34,20 @@
 
 /* Begin PBXFileReference section */
 		6404AAA41EBE7AF300CC9B71 /* TestMergingTwoProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMergingTwoProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6404AAA71EBE7AF300CC9B71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6404AAA91EBE7AF300CC9B71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6404AAAC1EBE7AF300CC9B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6404AAAE1EBE7AF300CC9B71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6404AAB11EBE7AF300CC9B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6404AAB31EBE7AF300CC9B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6404AAC51EBE7C0300CC9B71 /* EMS-Med-Management.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "EMS-Med-Management.xcodeproj"; path = "../EMS-Med-Management.xcodeproj"; sourceTree = "<group>"; };
+		6404AACB1EBE80CE00CC9B71 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../EMS-Med-Management/AppDelegate.swift"; sourceTree = "<group>"; };
+		6404AACD1EBE80E800CC9B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6404AAD01EBE80F000CC9B71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../EMS-Med-Management/Assets.xcassets"; sourceTree = "<group>"; };
+		6404AAD81EBE811500CC9B71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../EMS-Med-Management/Info.plist"; sourceTree = "<group>"; };
+		6404AADA1EBE811A00CC9B71 /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyButton.swift; path = "../../EMS-Med-Management/MyButton.swift"; sourceTree = "<group>"; };
+		6404AADC1EBE812300CC9B71 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = "../../EMS-Med-Management/MainVC.swift"; sourceTree = "<group>"; };
+		6404AADE1EBE812800CC9B71 /* ListOfMedBoxesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListOfMedBoxesVC.swift; path = "../../EMS-Med-Management/ListOfMedBoxesVC.swift"; sourceTree = "<group>"; };
+		6404AAE01EBE812F00CC9B71 /* ListOfTrucksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListOfTrucksVC.swift; path = "../../EMS-Med-Management/ListOfTrucksVC.swift"; sourceTree = "<group>"; };
+		6404AAE21EBE813500CC9B71 /* MedInventoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedInventoryVC.swift; path = "../../EMS-Med-Management/MedInventoryVC.swift"; sourceTree = "<group>"; };
+		6404AAE41EBE813C00CC9B71 /* MedUsedReplacedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedUsedReplacedVC.swift; path = "../../EMS-Med-Management/MedUsedReplacedVC.swift"; sourceTree = "<group>"; };
+		6404AAE61EBE814100CC9B71 /* OutdatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutdatesVC.swift; path = "../../EMS-Med-Management/OutdatesVC.swift"; sourceTree = "<group>"; };
+		6404AAE81EBE814600CC9B71 /* TruckInventoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TruckInventoryVC.swift; path = "../../EMS-Med-Management/TruckInventoryVC.swift"; sourceTree = "<group>"; };
+		6404AAEA1EBE817200CC9B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +81,19 @@
 		6404AAA61EBE7AF300CC9B71 /* TestMergingTwoProjects */ = {
 			isa = PBXGroup;
 			children = (
-				6404AAA71EBE7AF300CC9B71 /* AppDelegate.swift */,
-				6404AAA91EBE7AF300CC9B71 /* ViewController.swift */,
-				6404AAAB1EBE7AF300CC9B71 /* Main.storyboard */,
-				6404AAAE1EBE7AF300CC9B71 /* Assets.xcassets */,
-				6404AAB01EBE7AF300CC9B71 /* LaunchScreen.storyboard */,
-				6404AAB31EBE7AF300CC9B71 /* Info.plist */,
+				6404AACB1EBE80CE00CC9B71 /* AppDelegate.swift */,
+				6404AAEB1EBE817200CC9B71 /* LaunchScreen.storyboard */,
+				6404AACE1EBE80E800CC9B71 /* Main.storyboard */,
+				6404AAD01EBE80F000CC9B71 /* Assets.xcassets */,
+				6404AAD81EBE811500CC9B71 /* Info.plist */,
+				6404AADA1EBE811A00CC9B71 /* MyButton.swift */,
+				6404AADC1EBE812300CC9B71 /* MainVC.swift */,
+				6404AADE1EBE812800CC9B71 /* ListOfMedBoxesVC.swift */,
+				6404AAE01EBE812F00CC9B71 /* ListOfTrucksVC.swift */,
+				6404AAE21EBE813500CC9B71 /* MedInventoryVC.swift */,
+				6404AAE41EBE813C00CC9B71 /* MedUsedReplacedVC.swift */,
+				6404AAE61EBE814100CC9B71 /* OutdatesVC.swift */,
+				6404AAE81EBE814600CC9B71 /* TruckInventoryVC.swift */,
 			);
 			path = TestMergingTwoProjects;
 			sourceTree = "<group>";
@@ -160,9 +182,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6404AAB21EBE7AF300CC9B71 /* LaunchScreen.storyboard in Resources */,
-				6404AAAF1EBE7AF300CC9B71 /* Assets.xcassets in Resources */,
-				6404AAAD1EBE7AF300CC9B71 /* Main.storyboard in Resources */,
+				6404AAD91EBE811500CC9B71 /* Info.plist in Resources */,
+				6404AAEC1EBE817200CC9B71 /* LaunchScreen.storyboard in Resources */,
+				6404AAD11EBE80F000CC9B71 /* Assets.xcassets in Resources */,
+				6404AACF1EBE80E800CC9B71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,28 +196,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6404AAAA1EBE7AF300CC9B71 /* ViewController.swift in Sources */,
-				6404AAA81EBE7AF300CC9B71 /* AppDelegate.swift in Sources */,
+				6404AACC1EBE80CE00CC9B71 /* AppDelegate.swift in Sources */,
+				6404AAE91EBE814600CC9B71 /* TruckInventoryVC.swift in Sources */,
+				6404AAE11EBE812F00CC9B71 /* ListOfTrucksVC.swift in Sources */,
+				6404AADD1EBE812300CC9B71 /* MainVC.swift in Sources */,
+				6404AAE51EBE813C00CC9B71 /* MedUsedReplacedVC.swift in Sources */,
+				6404AADF1EBE812800CC9B71 /* ListOfMedBoxesVC.swift in Sources */,
+				6404AAE71EBE814100CC9B71 /* OutdatesVC.swift in Sources */,
+				6404AAE31EBE813500CC9B71 /* MedInventoryVC.swift in Sources */,
+				6404AADB1EBE811A00CC9B71 /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6404AAAB1EBE7AF300CC9B71 /* Main.storyboard */ = {
+		6404AACE1EBE80E800CC9B71 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6404AAAC1EBE7AF300CC9B71 /* Base */,
+				6404AACD1EBE80E800CC9B71 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "../../EMS-Med-Management";
 			sourceTree = "<group>";
 		};
-		6404AAB01EBE7AF300CC9B71 /* LaunchScreen.storyboard */ = {
+		6404AAEB1EBE817200CC9B71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6404AAB11EBE7AF300CC9B71 /* Base */,
+				6404AAEA1EBE817200CC9B71 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = "../../EMS-Med-Management";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

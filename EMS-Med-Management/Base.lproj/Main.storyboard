@@ -132,8 +132,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDg-dn-OJm">
+                                <rect key="frame" x="0.0" y="40" width="768" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Med Used/Replaced" id="1w1-td-Dm7">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="SLJ-jw-gLO">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="KfC-w6-XUr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fad-o9-sdM">
-                                <rect key="frame" x="40" y="187" width="688" height="559"/>
+                                <rect key="frame" x="40" y="102" width="688" height="559"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mxh-ZA-sfe">
                                         <rect key="frame" x="0.0" y="0.0" width="688" height="80"/>
@@ -269,28 +282,16 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDg-dn-OJm">
-                                <rect key="frame" x="0.0" y="40" width="768" height="44"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="Med Used/Replaced" id="1w1-td-Dm7">
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="SLJ-jw-gLO">
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="KfC-w6-XUr"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.10600619886035059" green="0.54681391500059595" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="VDg-dn-OJm" secondAttribute="trailing" id="2cM-qo-i6m"/>
-                            <constraint firstItem="fad-o9-sdM" firstAttribute="leading" secondItem="gLQ-JB-bKw" secondAttribute="leadingMargin" constant="20" id="7Pd-84-rJZ"/>
-                            <constraint firstItem="VDg-dn-OJm" firstAttribute="top" secondItem="KGl-Sp-AUJ" secondAttribute="bottom" constant="20" id="R1T-cj-UmU"/>
-                            <constraint firstItem="VDg-dn-OJm" firstAttribute="leading" secondItem="gLQ-JB-bKw" secondAttribute="leading" id="b8x-9s-v8b"/>
-                            <constraint firstItem="fad-o9-sdM" firstAttribute="top" secondItem="VDg-dn-OJm" secondAttribute="bottom" constant="103" id="dnB-Cc-gkh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fad-o9-sdM" secondAttribute="trailing" constant="20" id="qIm-oM-iiH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fad-o9-sdM" secondAttribute="trailing" constant="20" id="6pe-af-t4g"/>
+                            <constraint firstItem="fad-o9-sdM" firstAttribute="top" secondItem="VDg-dn-OJm" secondAttribute="bottom" constant="18" id="I3g-g4-njq"/>
+                            <constraint firstItem="fad-o9-sdM" firstAttribute="leading" secondItem="gLQ-JB-bKw" secondAttribute="leadingMargin" constant="20" id="IlG-vU-m3U"/>
+                            <constraint firstAttribute="trailing" secondItem="VDg-dn-OJm" secondAttribute="trailing" id="K2K-qd-0hF"/>
+                            <constraint firstItem="VDg-dn-OJm" firstAttribute="leading" secondItem="gLQ-JB-bKw" secondAttribute="leading" id="dlv-Ur-Wip"/>
+                            <constraint firstItem="VDg-dn-OJm" firstAttribute="top" secondItem="KGl-Sp-AUJ" secondAttribute="bottom" constant="20" id="fr0-xz-1sj"/>
+                            <constraint firstItem="Y2B-PP-WZ2" firstAttribute="top" secondItem="fad-o9-sdM" secondAttribute="bottom" constant="363" id="yrs-hf-A0i"/>
                         </constraints>
                     </view>
                     <connections>
@@ -359,7 +360,7 @@
                                         <rect key="frame" x="0.0" y="28" width="728" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GzD-Q0-YnX" id="2Ua-a0-SyM">
-                                            <rect key="frame" x="0.0" y="0.0" width="728" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.167729982432818" blue="0.18341975856672765" alpha="1" colorSpace="calibratedRGB"/>
@@ -498,7 +499,7 @@
                                         <rect key="frame" x="0.0" y="28" width="728" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oul-ZC-oZh" id="f6S-0s-lsd">
-                                            <rect key="frame" x="0.0" y="0.0" width="728" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.16772998240000001" blue="0.18341975860000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -946,7 +947,7 @@
                                         <rect key="frame" x="0.0" y="28" width="728" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YhQ-rV-SRx" id="1t6-2v-tyC">
-                                            <rect key="frame" x="0.0" y="0.0" width="728" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.16772998240000001" blue="0.18341975860000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1006,6 +1007,6 @@
         <image name="MainScreen" width="2048" height="1536"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pwa-Ng-ab0"/>
+        <segue reference="KfC-w6-XUr"/>
     </inferredMetricsTieBreakers>
 </document>
