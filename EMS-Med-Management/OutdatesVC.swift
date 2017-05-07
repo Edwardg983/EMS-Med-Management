@@ -22,6 +22,9 @@ class OutdatesVC: UIViewController {
     }
     
 
+    @IBAction func homeBtnTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

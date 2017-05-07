@@ -139,7 +139,7 @@
                                     <navigationItem title="Med Used/Replaced" id="1w1-td-Dm7">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="SLJ-jw-gLO">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="KfC-w6-XUr"/>
+                                                <action selector="homeBtnTapped:" destination="hOE-9k-Q1L" id="iXD-re-Pwn"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -327,7 +327,7 @@
                                     <navigationItem title="Med Inventory" id="mmm-iV-1fQ">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="aBR-Lx-hEt">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="uFe-q4-USz"/>
+                                                <action selector="homeBtnTapped:" destination="klP-2W-hhg" id="LLz-CE-Xoy"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -450,7 +450,7 @@
                                     <navigationItem title="List ofTrucks" id="j2P-J6-6Lc">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="acp-es-1Yw">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="73h-mR-ttg"/>
+                                                <action selector="homeBtnTapped:" destination="eag-j5-77b" id="z6p-nJ-ffJ"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -581,7 +581,7 @@
                                     <navigationItem title="Outdates" id="1la-uX-6Jy">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="vcs-ni-6Ra">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="rpx-bS-Ge5"/>
+                                                <action selector="homeBtnTapped:" destination="lPB-GS-Hde" id="jCs-zc-h1G"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -726,7 +726,7 @@
                                     <navigationItem title="Truck Inventory" id="Thm-Wt-7os">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="xMV-g9-0fA">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="Pwa-Ng-ab0"/>
+                                                <action selector="homeBtnTapped:" destination="5XN-26-MSW" id="adx-WI-DhW"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -888,7 +888,7 @@
                                     <navigationItem title="List of Med Boxes" id="AUm-cI-rNY">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="Gmf-0F-1Cc">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="jLc-Zp-80E"/>
+                                                <action selector="homeBtnTapped:" destination="AjP-yp-eeF" id="YB5-eR-ZxW"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1006,7 +1006,4 @@
     <resources>
         <image name="MainScreen" width="2048" height="1536"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="KfC-w6-XUr"/>
-    </inferredMetricsTieBreakers>
 </document>

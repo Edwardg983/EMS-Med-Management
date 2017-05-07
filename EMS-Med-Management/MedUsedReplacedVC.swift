@@ -10,6 +10,7 @@ import UIKit
 
 class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    
         
     @IBOutlet weak var truckPicker: UIPickerView!
     @IBOutlet weak var boxPicker: UIPickerView!
@@ -99,6 +100,10 @@ class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
         }
         
         return "Empty"
+    }
+    
+    @IBAction func homeBtnTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 
 }
