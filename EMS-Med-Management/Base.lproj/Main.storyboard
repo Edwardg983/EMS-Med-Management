@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="-72.75"/>
+            <point key="canvasLocation" x="107" y="-71"/>
         </scene>
         <!--Med Used ReplacedVC-->
         <scene sceneID="L6l-1R-bVk">
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXr-J2-hkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779" y="-1307"/>
+            <point key="canvasLocation" x="867" y="-622"/>
         </scene>
         <!--Med InventoryVC-->
         <scene sceneID="855-cR-GBk">
@@ -430,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnh-9J-Ik1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649" y="-1307"/>
+            <point key="canvasLocation" x="1552" y="-622"/>
         </scene>
         <!--List Of TrucksVC-->
         <scene sceneID="l0P-O6-d1y">
@@ -561,7 +561,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVx-XM-BWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2592" y="-1307"/>
+            <point key="canvasLocation" x="2277" y="-622"/>
         </scene>
         <!--OutdatesVC-->
         <scene sceneID="JNj-7k-Teo">
@@ -706,7 +706,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPC-WH-Sjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="256"/>
+            <point key="canvasLocation" x="866" y="228"/>
         </scene>
         <!--Truck InventoryVC-->
         <scene sceneID="MyR-qy-RGm">
@@ -868,7 +868,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpb-QD-Dxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="256"/>
+            <point key="canvasLocation" x="1575" y="228"/>
         </scene>
         <!--List Of Med BoxesVC-->
         <scene sceneID="avC-0q-sph">
@@ -1000,7 +1000,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J8e-IJ-hGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2967" y="256"/>
+            <point key="canvasLocation" x="2354" y="228"/>
         </scene>
     </scenes>
     <resources>
