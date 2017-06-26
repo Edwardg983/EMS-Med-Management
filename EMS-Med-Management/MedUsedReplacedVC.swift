@@ -21,10 +21,11 @@ class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
     @IBOutlet weak var newDatesPicker: UIPickerView!
     
     
-    var trucks = ["A1", "A2", "A3", "A4", "A5"]
-    var boxes = ["Medic", "Intermediate"]
-    var drugUsed = ["D10", "Albuterol","NTG"]
-    var expDate = ["3/31/2017", "12/31/2016", "6/30/2017"]
+    
+    var trucks = ["A1", "A2", "A3", "A4", "A5"] // TODO: Load the seperate DB
+    var boxes = ["Medic", "Intermediate"]       // TODO: Load the seperate DB
+    var drugUsed = ["D10", "Albuterol","NTG"]   // TODO: Load the seperate DB
+    var expDate = ["3/31/2017", "12/31/2016", "6/30/2017"] // Thinking this will be changed to a field entered by user.
     var numberUsedReplacing = ["1", "2", "3", "4", "5"] // This array fills both the number of used and replacing pickers.
     
     
@@ -38,8 +39,8 @@ class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
         boxPicker.dataSource = self
         drugUsedPicker.delegate = self
         drugUsedPicker.dataSource = self
-        expDatesPicker.delegate = self
-        expDatesPicker.dataSource = self
+        expDatesPicker.delegate = self      // May be deleted if changed to user supplied value
+        expDatesPicker.dataSource = self    // May be deleted if changed to user supplied value
         oldDatesPicker.delegate = self
         oldDatesPicker.dataSource = self
         newDatesPicker.delegate = self
@@ -48,6 +49,10 @@ class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
         truckPicker.layer.cornerRadius = 5.0
         
         
+        
+    }
+    
+    @IBAction func updateBtnTapped(sender: UIButton) {
         
     }
     

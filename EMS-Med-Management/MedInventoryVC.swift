@@ -9,13 +9,25 @@
 import UIKit
 
 class MedInventoryVC: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var dataService = DataService.instance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataService.delegate = self
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        dataService.getAllMeds { Success in
+        }
 
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,4 +47,33 @@ class MedInventoryVC: UIViewController {
     }
     */
 
+}
+
+extension MedInventoryVC: DataServiceDelegate {
+    func medsLoaded() {
+        DispatchQueue.main.async {
+            print("medsLoaded()")
+            self.tableView.reloadData()
+        }
+    }
+}
+
+extension MedInventoryVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("Med count is: \(dataService.emsMeds.count)" )
+        return dataService.emsMeds.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "EMSMedCell", for: indexPath) as? EMSMedCell {
+            cell.configureCell(med: dataService.emsMeds[indexPath.row])
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
 }
