@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +14,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="EMSMedClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="EMS_Med_Management" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,21 +29,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P1c-RY-jJ9">
                                 <rect key="frame" x="234" y="397" width="300" height="230"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vef-NZ-TY8" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vef-NZ-TY8" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.50588235294117645" green="0.50196078431372548" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="VNg-TL-X6b"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Meds Used/Replaced">
+                                        <state key="normal" title="Meds Used">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="hOE-9k-Q1L" kind="show" identifier="" id="S61-uz-l83"/>
+                                            <segue destination="Sbt-4l-aFH" kind="show" id="io8-d3-CRk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfE-5E-RWX" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfE-5E-RWX" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.50588235290000005" green="0.50196078430000002" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Med Inventory">
@@ -54,7 +53,7 @@
                                             <segue destination="klP-2W-hhg" kind="show" id="VHH-eU-aiO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFm-q9-JPx" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFm-q9-JPx" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="80" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.50588235294117645" green="0.50196078431372548" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="List of Trucks">
@@ -64,7 +63,7 @@
                                             <segue destination="eag-j5-77b" kind="show" id="vEi-zF-boO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNV-ql-4P4" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNV-ql-4P4" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="120" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.50588235290000005" green="0.50196078430000002" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Outdates">
@@ -74,7 +73,7 @@
                                             <segue destination="lPB-GS-Hde" kind="show" id="lxv-On-Niv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odl-6C-z8e" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odl-6C-z8e" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="160" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.50588235290000005" green="0.50196078430000002" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Truck Inventory">
@@ -84,7 +83,7 @@
                                             <segue destination="5XN-26-MSW" kind="show" id="LKL-Nt-tfL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkp-1s-0ze" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkp-1s-0ze" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="200" width="300" height="30"/>
                                         <color key="backgroundColor" red="0.50588235290000005" green="0.50196078430000002" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="List of Med Boxes">
@@ -120,10 +119,253 @@
             </objects>
             <point key="canvasLocation" x="-30" y="-69"/>
         </scene>
+        <!--Med UsedVC-->
+        <scene sceneID="2jF-pJ-7V6">
+            <objects>
+                <viewController id="Sbt-4l-aFH" customClass="MedUsedVC" customModule="EMS_Med_Management" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BoM-uj-uk1"/>
+                        <viewControllerLayoutGuide type="bottom" id="MnD-Gb-l6o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kSB-Pk-WEw">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Med Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VC-Xg-q6T">
+                                <rect key="frame" x="20" y="114" width="130" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="6V2-1v-n9E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kba-OB-ccc">
+                                <rect key="frame" x="20" y="317" width="137.5" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137.5" id="LPQ-mP-DsZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="183" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EHY-qw-g5f">
+                                <rect key="frame" x="20" y="361" width="728" height="549"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="549" id="dKJ-Rb-Qpg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="549" id="lsr-xC-8ha"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedCell" rowHeight="183" id="0bk-A7-LG3" userLabel="MedCell" customClass="MedCell" customModule="EMS_Med_Management" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="728" height="183"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0bk-A7-LG3" id="6oa-Ug-5tU">
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="182.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xw9-3z-mbH">
+                                                    <rect key="frame" x="8" y="10" width="85" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTh-P4-3wH">
+                                                    <rect key="frame" x="8" y="42" width="85" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exp. Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeZ-bp-gSL">
+                                                    <rect key="frame" x="8" y="73" width="85" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Truck:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="469-r4-sB0">
+                                                    <rect key="frame" x="8" y="104" width="85" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Box:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m2-Jn-YW8">
+                                                    <rect key="frame" x="8" y="135" width="85" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Quantity" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mJ-mF-1d1">
+                                                    <rect key="frame" x="101" y="37" width="387" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUk-hm-dRw">
+                                                    <rect key="frame" x="101" y="69" width="387" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQB-U6-XpZ">
+                                                    <rect key="frame" x="101" y="5" width="387" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nsn-1r-mM7">
+                                                    <rect key="frame" x="101" y="133" width="387" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq7-HJ-ahm">
+                                                    <rect key="frame" x="101" y="101" width="387" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.16772998240000001" blue="0.18341975860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="txtBox" destination="Nsn-1r-mM7" id="zl9-sL-OVq"/>
+                                            <outlet property="txtExpDate" destination="dUk-hm-dRw" id="mgl-NE-SYt"/>
+                                            <outlet property="txtName" destination="QQB-U6-XpZ" id="Hfl-IK-qY7"/>
+                                            <outlet property="txtQuantity" destination="8mJ-mF-1d1" id="yFp-bU-kcW"/>
+                                            <outlet property="txtTruck" destination="hq7-HJ-ahm" id="10I-9W-MG7"/>
+                                            <segue destination="hOE-9k-Q1L" kind="show" id="5Zw-Mt-hOE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiG-xe-EA0" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
+                                <rect key="frame" x="75" y="957" width="138" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="R0S-ct-XHY"/>
+                                    <constraint firstAttribute="width" constant="138" id="raR-Tw-qrR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Add Med">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgA-Gq-TKM" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
+                                <rect key="frame" x="495" y="957" width="186" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="186" id="MTq-F0-jbg"/>
+                                    <constraint firstAttribute="width" constant="186" id="SgI-zl-0Nt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Remove Med">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQH-y5-sao">
+                                <rect key="frame" x="0.0" y="40" width="768" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Med Used" id="pyF-Cq-57H">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="nhw-cA-Gdk">
+                                            <connections>
+                                                <action selector="homeBtnTapped:" destination="Sbt-4l-aFH" id="A1N-2U-MOD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWF-Wv-GXT">
+                                <rect key="frame" x="20" y="255" width="130" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="CsF-nj-7nL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGR-gm-cQz">
+                                <rect key="frame" x="181" y="101" width="544" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="t1N-40-kk2"/>
+                                    <constraint firstAttribute="width" constant="544" id="z15-RP-99X"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYo-jz-AB9">
+                                <rect key="frame" x="181" y="174" width="544" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="544" id="4LC-bf-xt5"/>
+                                    <constraint firstAttribute="height" constant="65" id="zRf-QS-hAr"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVk-uY-dQz">
+                                <rect key="frame" x="181" y="247" width="544" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="avO-m0-XgC"/>
+                                    <constraint firstAttribute="width" constant="544" id="dlz-QX-D6y"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truck:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoh-nA-nUL">
+                                <rect key="frame" x="20" y="183" width="130" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="t3w-e1-eW2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1060061989" green="0.54681391499999998" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DGR-gm-cQz" firstAttribute="leading" secondItem="1VC-Xg-q6T" secondAttribute="trailing" constant="31" id="0dU-uZ-r8P"/>
+                            <constraint firstItem="DGR-gm-cQz" firstAttribute="top" secondItem="pQH-y5-sao" secondAttribute="bottom" constant="17" id="3dB-kq-SCI"/>
+                            <constraint firstItem="NiG-xe-EA0" firstAttribute="top" secondItem="EHY-qw-g5f" secondAttribute="bottom" constant="47" id="3ic-Yu-BeL"/>
+                            <constraint firstItem="EHY-qw-g5f" firstAttribute="leading" secondItem="kSB-Pk-WEw" secondAttribute="leadingMargin" id="4TS-j6-ig5"/>
+                            <constraint firstItem="pQH-y5-sao" firstAttribute="top" secondItem="BoM-uj-uk1" secondAttribute="bottom" constant="20" id="5Ma-Aa-Gke"/>
+                            <constraint firstItem="kba-OB-ccc" firstAttribute="top" secondItem="NWF-Wv-GXT" secondAttribute="bottom" constant="30" id="5OF-Dz-56O"/>
+                            <constraint firstAttribute="trailing" secondItem="pQH-y5-sao" secondAttribute="trailing" id="9Vo-Ty-qCx"/>
+                            <constraint firstItem="kba-OB-ccc" firstAttribute="leading" secondItem="kSB-Pk-WEw" secondAttribute="leadingMargin" id="Bf0-HK-RYL"/>
+                            <constraint firstItem="pQH-y5-sao" firstAttribute="leading" secondItem="kSB-Pk-WEw" secondAttribute="leading" id="Btj-zC-ymW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dgA-Gq-TKM" secondAttribute="trailing" constant="67" id="Gxf-FC-Hsk"/>
+                            <constraint firstItem="1VC-Xg-q6T" firstAttribute="top" secondItem="pQH-y5-sao" secondAttribute="bottom" constant="30" id="IvL-dh-U9Y"/>
+                            <constraint firstItem="oYo-jz-AB9" firstAttribute="top" secondItem="DGR-gm-cQz" secondAttribute="bottom" constant="8" id="Lcu-dS-d9G"/>
+                            <constraint firstItem="NiG-xe-EA0" firstAttribute="leading" secondItem="kSB-Pk-WEw" secondAttribute="leadingMargin" constant="55" id="SH8-13-2H4"/>
+                            <constraint firstItem="NWF-Wv-GXT" firstAttribute="top" secondItem="hoh-nA-nUL" secondAttribute="bottom" constant="40" id="UbF-ST-Qys"/>
+                            <constraint firstItem="oYo-jz-AB9" firstAttribute="leading" secondItem="hoh-nA-nUL" secondAttribute="trailing" constant="31" id="Ztt-QA-ZKi"/>
+                            <constraint firstItem="NWF-Wv-GXT" firstAttribute="leading" secondItem="kSB-Pk-WEw" secondAttribute="leadingMargin" id="b42-MG-dB9"/>
+                            <constraint firstItem="hoh-nA-nUL" firstAttribute="leading" secondItem="kSB-Pk-WEw" secondAttribute="leadingMargin" id="bWf-fr-Kwi"/>
+                            <constraint firstItem="cVk-uY-dQz" firstAttribute="top" secondItem="oYo-jz-AB9" secondAttribute="bottom" constant="8" id="cED-p9-U66"/>
+                            <constraint firstItem="EHY-qw-g5f" firstAttribute="top" secondItem="kba-OB-ccc" secondAttribute="bottom" constant="12" id="gPF-jN-fvR"/>
+                            <constraint firstItem="hoh-nA-nUL" firstAttribute="top" secondItem="1VC-Xg-q6T" secondAttribute="bottom" constant="37.5" id="gVQ-FY-sxX"/>
+                            <constraint firstItem="dgA-Gq-TKM" firstAttribute="top" secondItem="EHY-qw-g5f" secondAttribute="bottom" constant="47" id="kjd-iE-iJc"/>
+                            <constraint firstItem="cVk-uY-dQz" firstAttribute="leading" secondItem="NWF-Wv-GXT" secondAttribute="trailing" constant="31" id="rAJ-1g-mA0"/>
+                            <constraint firstItem="EHY-qw-g5f" firstAttribute="trailing" secondItem="kSB-Pk-WEw" secondAttribute="trailingMargin" id="tvf-XN-xTi"/>
+                            <constraint firstItem="1VC-Xg-q6T" firstAttribute="leading" secondItem="kSB-Pk-WEw" secondAttribute="leadingMargin" id="zow-5R-6l6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boxPicker" destination="cVk-uY-dQz" id="Yyc-mq-jfL"/>
+                        <outlet property="drugUsedPicker" destination="DGR-gm-cQz" id="u4U-Ii-AQW"/>
+                        <outlet property="tableView" destination="EHY-qw-g5f" id="x4I-Km-Tkk"/>
+                        <outlet property="truckPicker" destination="oYo-jz-AB9" id="ZqJ-RN-FrJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIc-q4-eHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2415.625" y="-728.3203125"/>
+        </scene>
         <!--Med Used ReplacedVC-->
         <scene sceneID="L6l-1R-bVk">
             <objects>
-                <viewController id="hOE-9k-Q1L" customClass="MedUsedReplacedVC" customModule="EMSMedClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hOE-9k-Q1L" customClass="MedUsedReplacedVC" customModule="EMS_Med_Management" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KGl-Sp-AUJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Y2B-PP-WZ2"/>
@@ -321,12 +563,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXr-J2-hkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.90625" y="-734.1796875"/>
+            <point key="canvasLocation" x="3223" y="-734"/>
         </scene>
         <!--Med InventoryVC-->
         <scene sceneID="855-cR-GBk">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="klP-2W-hhg" customClass="MedInventoryVC" customModule="EMSMedClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="klP-2W-hhg" customClass="MedInventoryVC" customModule="EMS_Med_Management" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9bh-ot-cys"/>
                         <viewControllerLayoutGuide type="bottom" id="Yod-c9-TpP"/>
@@ -336,13 +578,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Med Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPx-u6-bbT">
-                                <rect key="frame" x="20" y="144.5" width="133.5" height="31.5"/>
+                                <rect key="frame" x="20" y="144.5" width="130" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbH-ja-yCl">
-                                <rect key="frame" x="20" y="284" width="141" height="32"/>
+                                <rect key="frame" x="20" y="284" width="137.5" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -351,7 +593,7 @@
                                 <rect key="frame" x="20" y="328" width="728" height="549"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EMSMedCell" rowHeight="183" id="GzD-Q0-YnX" customClass="EMSMedCell" customModule="EMSMedClient" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedCell" rowHeight="183" id="GzD-Q0-YnX" userLabel="MedCell" customClass="MedCell" customModule="EMS_Med_Management" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="728" height="183"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GzD-Q0-YnX" id="2Ua-a0-SyM">
@@ -432,17 +674,17 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.167729982432818" blue="0.18341975856672765" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="txtBox" destination="uho-7k-Pbg" id="oGJ-m7-QWQ"/>
-                                            <outlet property="txtExpDate" destination="KxU-Um-zYU" id="ath-d8-IMa"/>
-                                            <outlet property="txtName" destination="nPh-19-nNZ" id="bM1-zN-IaT"/>
-                                            <outlet property="txtQuantity" destination="cj5-5E-j8A" id="3sr-fi-Wj9"/>
-                                            <outlet property="txtTruck" destination="YRf-6e-t0q" id="qmx-Og-3fj"/>
+                                            <outlet property="txtBox" destination="uho-7k-Pbg" id="Qax-1L-fc4"/>
+                                            <outlet property="txtExpDate" destination="KxU-Um-zYU" id="MRT-JW-gc9"/>
+                                            <outlet property="txtName" destination="nPh-19-nNZ" id="RsI-Lh-iu1"/>
+                                            <outlet property="txtQuantity" destination="cj5-5E-j8A" id="7bH-Q2-ZcZ"/>
+                                            <outlet property="txtTruck" destination="YRf-6e-t0q" id="N3W-uf-nzD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V6R-ju-3tZ">
-                                <rect key="frame" x="161.5" y="146" width="343" height="30"/>
+                                <rect key="frame" x="158" y="146" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="XPM-hm-asZ"/>
                                 </constraints>
@@ -450,7 +692,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpy-bH-B97" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpy-bH-B97" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                 <rect key="frame" x="75" y="924" width="138" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="3zO-kf-C3p"/>
@@ -460,7 +702,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlT-Gf-zu0" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlT-Gf-zu0" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                 <rect key="frame" x="495" y="924" width="186" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="186" id="0Db-Ag-taz"/>
@@ -484,25 +726,25 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.1060061989" green="0.54681391499999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.54509803921568623" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dbH-ja-yCl" firstAttribute="leading" secondItem="u6E-nl-z4b" secondAttribute="leadingMargin" id="2qV-2G-Qaz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OyH-hF-Cu1" secondAttribute="trailing" id="829-EX-Wn6"/>
                             <constraint firstItem="OyH-hF-Cu1" firstAttribute="top" secondItem="dbH-ja-yCl" secondAttribute="bottom" constant="12" id="9Ey-DP-QPN"/>
                             <constraint firstAttribute="trailing" secondItem="CRO-t8-cQd" secondAttribute="trailing" id="CQh-8q-9Qf"/>
                             <constraint firstItem="V6R-ju-3tZ" firstAttribute="top" secondItem="CRO-t8-cQd" secondAttribute="bottom" constant="62" id="G4j-bo-IkV"/>
+                            <constraint firstItem="CRO-t8-cQd" firstAttribute="top" secondItem="9bh-ot-cys" secondAttribute="bottom" constant="20" id="HWr-UD-aw6"/>
                             <constraint firstItem="dbH-ja-yCl" firstAttribute="top" secondItem="V6R-ju-3tZ" secondAttribute="bottom" constant="108" id="NNS-1M-bVd"/>
                             <constraint firstItem="cPx-u6-bbT" firstAttribute="leading" secondItem="u6E-nl-z4b" secondAttribute="leadingMargin" id="NVL-3x-hf6"/>
                             <constraint firstItem="Mpy-bH-B97" firstAttribute="leading" secondItem="u6E-nl-z4b" secondAttribute="leadingMargin" constant="55" id="UXp-BT-xHi"/>
                             <constraint firstItem="CRO-t8-cQd" firstAttribute="leading" secondItem="u6E-nl-z4b" secondAttribute="leading" id="b9R-oc-hQk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vlT-Gf-zu0" secondAttribute="trailing" constant="67" id="bUd-Ob-leh"/>
-                            <constraint firstItem="Yod-c9-TpP" firstAttribute="top" secondItem="vlT-Gf-zu0" secondAttribute="bottom" constant="56" id="dwX-t2-0vU"/>
                             <constraint firstItem="cPx-u6-bbT" firstAttribute="top" secondItem="CRO-t8-cQd" secondAttribute="bottom" constant="60.5" id="ekf-VL-kK9"/>
                             <constraint firstItem="V6R-ju-3tZ" firstAttribute="leading" secondItem="cPx-u6-bbT" secondAttribute="trailing" constant="8" id="fep-ED-2zf"/>
-                            <constraint firstItem="CRO-t8-cQd" firstAttribute="top" secondItem="9bh-ot-cys" secondAttribute="bottom" constant="20" id="juT-k7-Ure"/>
                             <constraint firstItem="Mpy-bH-B97" firstAttribute="top" secondItem="OyH-hF-Cu1" secondAttribute="bottom" constant="47" id="o0A-uw-Ipd"/>
                             <constraint firstItem="OyH-hF-Cu1" firstAttribute="leading" secondItem="u6E-nl-z4b" secondAttribute="leadingMargin" id="qi4-Ce-3Y2"/>
                             <constraint firstItem="vlT-Gf-zu0" firstAttribute="top" secondItem="OyH-hF-Cu1" secondAttribute="bottom" constant="47" id="qzf-Me-s0C"/>
+                            <constraint firstItem="Yod-c9-TpP" firstAttribute="top" secondItem="vlT-Gf-zu0" secondAttribute="bottom" constant="56" id="yzk-ty-JZN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -526,7 +768,7 @@
         <!--List Of TrucksVC-->
         <scene sceneID="l0P-O6-d1y">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="eag-j5-77b" customClass="ListOfTrucksVC" customModule="EMSMedClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="eag-j5-77b" customClass="ListOfTrucksVC" customModule="EMS_Med_Management" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GBE-2o-wVr"/>
                         <viewControllerLayoutGuide type="bottom" id="JbG-yR-PcQ"/>
@@ -547,7 +789,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCI-Zm-j2d" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCI-Zm-j2d" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                 <rect key="frame" x="94" y="919" width="148" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="148" id="aiZ-Wk-lCc"/>
@@ -557,7 +799,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5T-F9-e6p" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5T-F9-e6p" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                 <rect key="frame" x="484" y="919" width="176" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="176" id="vMI-HI-MQb"/>
@@ -568,13 +810,13 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truck Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhQ-pP-XN0">
-                                <rect key="frame" x="20" y="151.5" width="146" height="31.5"/>
+                                <rect key="frame" x="20" y="151.5" width="140.5" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjc-zg-0Qc">
-                                <rect key="frame" x="20" y="279" width="141" height="32"/>
+                                <rect key="frame" x="20" y="279" width="137.5" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -595,7 +837,7 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myJ-U7-0LD">
-                                <rect key="frame" x="174" y="153" width="343" height="30"/>
+                                <rect key="frame" x="168.5" y="153" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CpL-Bv-gV5"/>
                                     <constraint firstAttribute="width" constant="343" id="HZj-Lq-CLr"/>
@@ -647,12 +889,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVx-XM-BWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2457" y="-734"/>
+            <point key="canvasLocation" x="854" y="-734"/>
         </scene>
         <!--OutdatesVC-->
         <scene sceneID="JNj-7k-Teo">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="lPB-GS-Hde" customClass="OutdatesVC" customModule="EMSMedClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="lPB-GS-Hde" customClass="OutdatesVC" customModule="EMS_Med_Management" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w1v-KI-vu4"/>
                         <viewControllerLayoutGuide type="bottom" id="0Wf-3A-H0A"/>
@@ -673,7 +915,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19N-OC-sHn" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19N-OC-sHn" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                 <rect key="frame" x="272" y="893" width="224" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="224" id="BCR-YV-8Oq"/>
@@ -685,7 +927,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UT-6T-N6t">
-                                <rect key="frame" x="20" y="221" width="76" height="29"/>
+                                <rect key="frame" x="20" y="220.5" width="76" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="9Ee-pm-mL6"/>
                                     <constraint firstAttribute="width" constant="76" id="XIu-EY-tAW"/>
@@ -695,13 +937,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Exp by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7R-EB-sxV">
-                                <rect key="frame" x="20" y="277" width="175" height="32"/>
+                                <rect key="frame" x="20" y="276.5" width="169" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List of Expiring Meds:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRR-iN-LyD">
-                                <rect key="frame" x="20" y="354" width="248" height="32"/>
+                                <rect key="frame" x="20" y="354.5" width="240" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -716,14 +958,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCl-Zf-b9T">
-                                <rect key="frame" x="213" y="286" width="204" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCl-Zf-b9T">
+                                <rect key="frame" x="213" y="60" width="204" height="0.0"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-Hd-rDa">
-                                <rect key="frame" x="213" y="227" width="204" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-Hd-rDa">
+                                <rect key="frame" x="213" y="31" width="204" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="204" id="7Vs-wp-f5f"/>
                                 </constraints>
@@ -732,13 +974,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgO-P6-BU6">
-                                <rect key="frame" x="213" y="169" width="204" height="30"/>
+                                <rect key="frame" x="213" y="168" width="204" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truck:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgC-8M-Nv3">
-                                <rect key="frame" x="20" y="167" width="76" height="32"/>
+                                <rect key="frame" x="20" y="167" width="76" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -800,7 +1042,7 @@
         <!--Truck InventoryVC-->
         <scene sceneID="MyR-qy-RGm">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="5XN-26-MSW" customClass="TruckInventoryVC" customModule="EMSMedClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="5XN-26-MSW" customClass="TruckInventoryVC" customModule="EMS_Med_Management" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Qy-Tu-rkB"/>
                         <viewControllerLayoutGuide type="bottom" id="Dd5-ON-xHI"/>
@@ -859,7 +1101,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiC-yt-Knb">
-                                <rect key="frame" x="20" y="201.5" width="75.5" height="31.5"/>
+                                <rect key="frame" x="20" y="201.5" width="73.5" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -963,7 +1205,7 @@
         <!--List Of Med BoxesVC-->
         <scene sceneID="avC-0q-sph">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="AjP-yp-eeF" customClass="ListOfMedBoxesVC" customModule="EMSMedClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="AjP-yp-eeF" customClass="ListOfMedBoxesVC" customModule="EMS_Med_Management" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hek-ex-FfC"/>
                         <viewControllerLayoutGuide type="bottom" id="zRL-9l-5by"/>
@@ -984,7 +1226,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwR-Mm-JTG" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwR-Mm-JTG" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                 <rect key="frame" x="94" y="916" width="148" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="148" id="544-lS-8aA"/>
@@ -994,7 +1236,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mja-Kz-wxt" customClass="myButton" customModule="EMSMedClient" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mja-Kz-wxt" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                 <rect key="frame" x="484" y="916" width="176" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="176" id="p0r-AU-3pB"/>
@@ -1021,7 +1263,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUf-NZ-Zdo">
-                                <rect key="frame" x="20" y="263" width="141" height="31"/>
+                                <rect key="frame" x="20" y="263" width="137.5" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

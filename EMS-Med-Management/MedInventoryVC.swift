@@ -9,7 +9,7 @@
 import UIKit
 
 class MedInventoryVC: UIViewController {
-    
+  
     @IBOutlet weak var tableView: UITableView!
     
     var dataService = DataService.instance
@@ -22,35 +22,22 @@ class MedInventoryVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        dataService.getAllMeds { Success in
-        }
+        DataService.instance.getAllMedications()
+        //dataService.getAllMedications { Success in
+        //}
 
         // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func homeBtnTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }
 
 extension MedInventoryVC: DataServiceDelegate {
-    func medsLoaded() {
+    func medicationsLoaded() {
         DispatchQueue.main.async {
             print("medsLoaded()")
             self.tableView.reloadData()
@@ -64,16 +51,17 @@ extension MedInventoryVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Med count is: \(dataService.emsMeds.count)" )
-        return dataService.emsMeds.count
+        //print("Med count is: \(dataService.emsMeds.count)" )
+        return dataService.meds.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "EMSMedCell", for: indexPath) as? EMSMedCell {
-            cell.configureCell(med: dataService.emsMeds[indexPath.row])
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "MedCell", for: indexPath) as? MedCell {
+            cell.configureCell(med: dataService.meds[indexPath.row])
             return cell
         } else {
             return UITableViewCell()
         }
     }
+ 
 }
