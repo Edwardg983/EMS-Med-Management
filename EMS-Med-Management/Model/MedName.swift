@@ -9,6 +9,8 @@
 import Foundation
 
 class MedName {
+    
+    //var name = [String]()
     var name: String = ""
     
     
