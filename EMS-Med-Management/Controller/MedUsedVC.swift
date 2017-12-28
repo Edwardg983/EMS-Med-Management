@@ -16,15 +16,18 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
     @IBOutlet weak var medUsedPicker: UIPickerView!
     
     var dataService = DataService.instance
-    var trucks = ["A1", "A2", "A3", "A4", "A5"] // TODO: Load the seperate DB
-    var boxes = ["Medic", "Intermediate"]       // TODO: Load the seperate DB
-    var drugUsed = ["D10", "Albuterol","NTG"]   // TODO: Load the seperate DB
-    var medNames = [MedName]() // This array will be used to hold the distinct names of meds in the collection which will than be used to populate the drugUsedPicker. To find this array used the .distinct() in MongoDB (db.getCollection('medications').distinct("name") This is the command used in Robo 3T to create the distinct list.) Will actual what to do this for the other pickers in this VC also.
+//    var trucks = ["A1", "A2", "A3", "A4", "A5"] // TODO: Load the seperate DB
+//    var boxes = ["Medic", "Intermediate"]       // TODO: Load the seperate DB
+//    var drugUsed = ["D10", "Albuterol","NTG"]   // TODO: Load the seperate DB
+//    var medNames = [MedName]() // This array will be used to hold the distinct names of meds in the collection which will than be used to populate the drugUsedPicker. To find this array used the .distinct() in MongoDB (db.getCollection('medications').distinct("name") This is the command used in Robo 3T to create the distinct list.) Will actual what to do this for the other pickers in this VC also.
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        DataService.instance.getDistinctMedNames()
+ 
+//  Moved these to mainVC in the viewDidLoad() so that they would be populated before this VC loads, otherwise the pickers don't populate unless I leave page and come back.
+//        DataService.instance.getDistinctMedNames()
+//        DataService.instance.getDistinctTruckNames()
+//        DataService.instance.getDistinctBoxNames()
         
         dataService.delegate = self
         truckPicker.dataSource = self
@@ -50,13 +53,13 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView == truckPicker{
-            return trucks.count
+            return DataService.instance.distinctTruckNames.count
         }
         if pickerView == boxPicker{
-            return boxes.count
+            return DataService.instance.distinctBoxNames.count
         }
         if pickerView == medUsedPicker{
-            return medNames.count
+            return DataService.instance.distinctMedNames.count
         }
         
         
@@ -65,13 +68,13 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView == truckPicker{
-            return trucks[row]
+            return dataService.distinctTruckNames[row]
         }
         if pickerView == boxPicker{
-            return boxes[row]
+            return dataService.distinctBoxNames[row]
         }
         if pickerView == medUsedPicker{
-            return dataService.distinctMedNames[row].name
+            return dataService.distinctMedNames[row]
         }
         
         return "Empty"

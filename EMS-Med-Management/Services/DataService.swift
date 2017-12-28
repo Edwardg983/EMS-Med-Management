@@ -18,7 +18,9 @@ class DataService {
     weak var delegate: DataServiceDelegate?
     var meds = [Medication]()  // All meds
     var medsUsed = [Medication]() // Meds used on a call
-    var distinctMedNames = [MedName]()
+    var distinctMedNames = [String]()
+    var distinctTruckNames = [String]()
+    var distinctBoxNames = [String]()
     
     
     // GET all medications
@@ -167,13 +169,65 @@ class DataService {
                 print("URL Session Task Succeeded: HTTP \(statusCode)")
                 // Parse JSON data
                 if let data = data {
-                    print("Inside function")
-                    print(data)
                     self.distinctMedNames = MedName.parseMedNameJSONData(data: data)
-                    //self.medsUsed = Medication.parseMedicationJSONData(data: data)
-                    self.delegate?.medicationsLoaded()
-                    print(self.distinctMedNames)
+//                    self.delegate?.medicationsLoaded() // May need to institute a specific function (distinctMedNamesLoaded())
                 }
+            } else {
+                // Failure
+                print("URL Session Task Failed: \(error?.localizedDescription)")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
+    func getDistinctTruckNames() {
+        let sessionConfig = URLSessionConfiguration.default
+        
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        guard let URL = URL(string: "\(GET_DISTINCT_TRUCK_NAMES)") else { return }
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task Succeeded: HTTP \(statusCode)")
+                // Parse JSON data
+                if let data = data {
+                    self.distinctTruckNames = TruckName.parseTruckNameJSONData(data: data)
+//                    self.delegate?.medicationsLoaded() // May need to institute a specific function (distinctTruckNamesLoaded())
+                }
+            } else {
+                // Failure
+                print("URL Session Task Failed: \(error?.localizedDescription)")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
+    func getDistinctBoxNames() {
+        let sessionConfig = URLSessionConfiguration.default
+        
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        guard let URL = URL(string: "\(GET_DISTINCT_BOX_NAMES)") else { return }
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task Succeeded: HTTP \(statusCode)")
+                // Parse JSON data
+                if let data = data {
+                    self.distinctBoxNames = BoxName.parseBoxNameJSONData(data: data)
+//                    self.delegate?.medicationsLoaded() // May need to institute a specific function (distinctBoxNamesLoaded())
+               }
             } else {
                 // Failure
                 print("URL Session Task Failed: \(error?.localizedDescription)")

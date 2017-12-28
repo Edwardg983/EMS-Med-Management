@@ -39,7 +39,6 @@ class MedInventoryVC: UIViewController {
 extension MedInventoryVC: DataServiceDelegate {
     func medicationsLoaded() {
         DispatchQueue.main.async {
-            print("medsLoaded()")
             self.tableView.reloadData()
         }
     }

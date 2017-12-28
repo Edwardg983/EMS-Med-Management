@@ -26,6 +26,12 @@ let GET_MED_USED = "\(BASE_API_URL)/medication/medUsed"
 // GET distinct med names
 let GET_DISTINCT_MED_NAMES = "\(BASE_API_URL)/medication/getDistinctMedNames"
 
+// GET distinct truck names
+let GET_DISTINCT_TRUCK_NAMES = "\(BASE_API_URL)/medication/getDistinctTruckNames"
+
+// GET distinct box names
+let GET_DISTINCT_BOX_NAMES = "\(BASE_API_URL)/medication/getDistinctBoxNames"
+
 // POST add new medication
 let POST_ADD_NEW_MED = "\(BASE_API_URL)/medication/add"
 

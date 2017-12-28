@@ -1,17 +1,17 @@
 //
-//  MedName.swift
+//  BoxName.swift
 //  EMS-Med-Management
 //
-//  Created by Edward Greene on 12/27/17.
+//  Created by Edward Greene on 12/28/17.
 //  Copyright © 2017 Edward Greene. All rights reserved.
 //
 
 import Foundation
 
-class MedName {
+class BoxName {
     
-    static func parseMedNameJSONData(data: Data) -> [String] {
-        var medNames = [String]()
+    static func parseBoxNameJSONData(data: Data) -> [String] {
+        var boxNames = [String]()
         
         do {
             let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
@@ -21,16 +21,14 @@ class MedName {
                 for name in names {
                     var newName = ""
                     newName = name
-                    print(newName)
-
-                    medNames.append(newName)
+                    boxNames.append(newName)
                 }
-           }
+            }
             
         } catch let err {
             print(err)
         }
-        print("Med Names count \(medNames.count)")
-        return medNames
+        print("Box Names count \(boxNames.count)")
+        return boxNames
     }
 }
