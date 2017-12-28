@@ -10,6 +10,7 @@
 		641247D91F89216300B8D132 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641247D71F89216300B8D132 /* LogInVC.swift */; };
 		641247DA1F89216300B8D132 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 641247D81F89216300B8D132 /* LogInVC.xib */; };
 		6463B2D21EBF9ECF00017F7D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463B2D11EBF9ECF00017F7D /* Launch Screen.storyboard */; };
+		646DE5A11FF42A92009E3006 /* MedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A01FF42A92009E3006 /* MedName.swift */; };
 		647DAC3A1E6F4B6500A25B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DAC391E6F4B6500A25B9B /* AppDelegate.swift */; };
 		647DAC3F1E6F4B6500A25B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DAC3D1E6F4B6500A25B9B /* Main.storyboard */; };
 		647DAC411E6F4B6500A25B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647DAC401E6F4B6500A25B9B /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		641247D71F89216300B8D132 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		641247D81F89216300B8D132 /* LogInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInVC.xib; sourceTree = "<group>"; };
 		6463B2D11EBF9ECF00017F7D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		646DE5A01FF42A92009E3006 /* MedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedName.swift; sourceTree = "<group>"; };
 		647DAC361E6F4B6500A25B9B /* EMS-Med-Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EMS-Med-Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		647DAC391E6F4B6500A25B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		647DAC3E1E6F4B6500A25B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				647DF5B51F86AFB0001E478D /* Medication.swift */,
+				646DE5A01FF42A92009E3006 /* MedName.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				647DAC3A1E6F4B6500A25B9B /* AppDelegate.swift in Sources */,
 				64A618251E6F5D0B00AEA888 /* TruckInventoryVC.swift in Sources */,
 				649CDACA1F885669007C5FC1 /* MedCell.swift in Sources */,
+				646DE5A11FF42A92009E3006 /* MedName.swift in Sources */,
 				64A6181D1E6F5C8F00AEA888 /* ListOfTrucksVC.swift in Sources */,
 				64A618191E6F5A7900AEA888 /* MainVC.swift in Sources */,
 				647DF5B61F86AFB0001E478D /* Medication.swift in Sources */,

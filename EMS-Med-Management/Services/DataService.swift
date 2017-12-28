@@ -18,6 +18,8 @@ class DataService {
     weak var delegate: DataServiceDelegate?
     var meds = [Medication]()  // All meds
     var medsUsed = [Medication]() // Meds used on a call
+    var distinctMedNames = [MedName]()
+    
     
     // GET all medications
     func getAllMedications() {
@@ -37,9 +39,11 @@ class DataService {
                 // Success
                 let statusCode = (response as! HTTPURLResponse).statusCode
                 print("URL Session Task Succeeded: HTTP \(statusCode)")
+                                  
                 if let data = data {
                     self.meds = Medication.parseMedicationJSONData(data: data)
                     self.delegate?.medicationsLoaded()
+                
                 }
             }
             else {
@@ -114,7 +118,70 @@ class DataService {
         }
     }
     
-    // TODO: Need to create a function that works with the MedUsedVC. This function will need to take the info from the text fields and search the DB. The returned info will populate the table view. This function will be similar to the functions Jack used to find a specific truck, only it will use  more fields which need to be matched.
+    // TODO: Need to create a function that works with the MedUsedVC. This function will need to take the info from the text fields and search the DB. The returned info will populate the table view. This function will be similar to the functions Jack used to find a specific truck for its reviews, only it will use  more fields which need to be matched. DataService video at 22 min mark.
+    
+    // ********  12/27/17 This function has not been tested yet. Since I'm not sure how the actual collection name is determined. This function might create a medsUsed collection which will need to be reset to an empty array after useage  *******
+    
+    // GET med used on a call
+    func getMedUsed(_ name: String, truck: String, box: String) {
+        let sessionConfig = URLSessionConfiguration.default
+        
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        guard let URL = URL(string: "\(GET_MED_USED)/\(name)\(truck)\(box)") else { return }
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task Succeeded: HTTP \(statusCode)")
+                // Parse JSON data
+                if let data = data {
+                    self.medsUsed = Medication.parseMedicationJSONData(data: data)
+                    self.delegate?.medicationsLoaded()
+                }
+            } else {
+                // Failure
+                print("URL Session Task Failed: \(error?.localizedDescription)")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
+    func getDistinctMedNames() {
+        let sessionConfig = URLSessionConfiguration.default
+        
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        guard let URL = URL(string: "\(GET_DISTINCT_MED_NAMES)") else { return }
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task Succeeded: HTTP \(statusCode)")
+                // Parse JSON data
+                if let data = data {
+                    print("Inside function")
+                    print(data)
+                    self.distinctMedNames = MedName.parseMedNameJSONData(data: data)
+                    //self.medsUsed = Medication.parseMedicationJSONData(data: data)
+                    self.delegate?.medicationsLoaded()
+                    print(self.distinctMedNames)
+                }
+            } else {
+                // Failure
+                print("URL Session Task Failed: \(error?.localizedDescription)")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
 }
 
 

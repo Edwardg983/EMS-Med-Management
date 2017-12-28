@@ -13,23 +13,26 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var truckPicker: UIPickerView!
     @IBOutlet weak var boxPicker: UIPickerView!
-    @IBOutlet weak var drugUsedPicker: UIPickerView!
+    @IBOutlet weak var medUsedPicker: UIPickerView!
     
     var dataService = DataService.instance
     var trucks = ["A1", "A2", "A3", "A4", "A5"] // TODO: Load the seperate DB
     var boxes = ["Medic", "Intermediate"]       // TODO: Load the seperate DB
     var drugUsed = ["D10", "Albuterol","NTG"]   // TODO: Load the seperate DB
+    var medNames = [MedName]() // This array will be used to hold the distinct names of meds in the collection which will than be used to populate the drugUsedPicker. To find this array used the .distinct() in MongoDB (db.getCollection('medications').distinct("name") This is the command used in Robo 3T to create the distinct list.) Will actual what to do this for the other pickers in this VC also.
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DataService.instance.getDistinctMedNames()
         
         dataService.delegate = self
         truckPicker.dataSource = self
         truckPicker.delegate = self
         boxPicker.delegate = self
         boxPicker.dataSource = self
-        drugUsedPicker.delegate = self
-        drugUsedPicker.dataSource = self
+        medUsedPicker.delegate = self
+        medUsedPicker.dataSource = self
         tableView.delegate = self
         tableView.dataSource = self
 
@@ -52,8 +55,8 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         if pickerView == boxPicker{
             return boxes.count
         }
-        if pickerView == drugUsedPicker{
-            return drugUsed.count
+        if pickerView == medUsedPicker{
+            return medNames.count
         }
         
         
@@ -67,11 +70,19 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         if pickerView == boxPicker{
             return boxes[row]
         }
-        if pickerView == drugUsedPicker{
-            return drugUsed[row]
+        if pickerView == medUsedPicker{
+            return dataService.distinctMedNames[row].name
         }
         
         return "Empty"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToMedUsedReplaced" {
+            let destinationVC = segue.destination as! MedUsedReplacedVC
+            
+            destinationVC.data = sender as? MedCell
+        }
     }
 
 
@@ -104,4 +115,20 @@ extension MedUsedVC: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Think this is the func I need to use to trigger segue
+        
+        performSegue(withIdentifier: "goToMedUsedReplaced", sender: self)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

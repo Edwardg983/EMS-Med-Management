@@ -25,9 +25,15 @@ class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
     var trucks = ["A1", "A2", "A3", "A4", "A5"] // TODO: Load the seperate DB
     var boxes = ["Medic", "Intermediate"]       // TODO: Load the seperate DB
     var drugUsed = ["D10", "Albuterol","NTG"]   // TODO: Load the seperate DB
-    var expDate = ["3/31/2017", "12/31/2016", "6/30/2017"] // Will load the expDates of the used med by querying trucks, box and med name.
+    var exp_Date = ["3/31/2017", "12/31/2016", "6/30/2017"] // Will load the expDates of the used med by querying trucks, box and med name.
     var numberUsedReplacing = ["1", "2", "3", "4", "5"] // This array fills both the number of used and replacing pickers.
     
+    var data: MedCell? // I'm hoping this var will contain the info from the MedUsedVC.
+    var truck: String?
+    var medName: String?
+    var box: String?
+    var quantity: Int?
+    var expDate: String?  // Will need to change type once I figured out how to use dates.
     
     
     
@@ -48,6 +54,7 @@ class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
         
         truckPicker.layer.cornerRadius = 5.0
         
+        print(data?.txtName) as! String  // Hoping this will populate the name field in this VC. Once I have the method created to search the DB for the med used I will be able to test this. 12/24/17
         
         
     }
@@ -72,7 +79,7 @@ class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
             return drugUsed.count
         }
         if pickerView == expDatesPicker{
-            return expDate.count
+            return exp_Date.count
         }
         if pickerView == oldDatesPicker{
             return numberUsedReplacing.count
@@ -95,7 +102,7 @@ class MedUsedReplacedVC: UIViewController, UIPickerViewDataSource, UIPickerViewD
             return drugUsed[row]
         }
         if pickerView == expDatesPicker{
-            return expDate[row]
+            return exp_Date[row]
         }
         if pickerView == oldDatesPicker{
             return numberUsedReplacing[row]

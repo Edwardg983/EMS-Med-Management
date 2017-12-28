@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -243,7 +243,7 @@
                                             <outlet property="txtName" destination="QQB-U6-XpZ" id="Hfl-IK-qY7"/>
                                             <outlet property="txtQuantity" destination="8mJ-mF-1d1" id="yFp-bU-kcW"/>
                                             <outlet property="txtTruck" destination="hq7-HJ-ahm" id="10I-9W-MG7"/>
-                                            <segue destination="hOE-9k-Q1L" kind="show" id="5Zw-Mt-hOE"/>
+                                            <segue destination="hOE-9k-Q1L" kind="show" identifier="goToMedUsedReplaced" id="5Zw-Mt-hOE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -353,7 +353,7 @@
                     </view>
                     <connections>
                         <outlet property="boxPicker" destination="cVk-uY-dQz" id="Yyc-mq-jfL"/>
-                        <outlet property="drugUsedPicker" destination="DGR-gm-cQz" id="u4U-Ii-AQW"/>
+                        <outlet property="medUsedPicker" destination="DGR-gm-cQz" id="Iao-R1-SdO"/>
                         <outlet property="tableView" destination="EHY-qw-g5f" id="x4I-Km-Tkk"/>
                         <outlet property="truckPicker" destination="oYo-jz-AB9" id="ZqJ-RN-FrJ"/>
                     </connections>
@@ -563,7 +563,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXr-J2-hkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3223" y="-734"/>
+            <point key="canvasLocation" x="3219" y="-728"/>
         </scene>
         <!--Med InventoryVC-->
         <scene sceneID="855-cR-GBk">
