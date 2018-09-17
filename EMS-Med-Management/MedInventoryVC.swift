@@ -10,9 +10,20 @@ import UIKit
 
 class MedInventoryVC: UIViewController {
   
+    @IBOutlet weak var txtMedName: UITextField!
+    @IBOutlet weak var txtQuantity: UITextField!
+    @IBOutlet weak var txtExpDate: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var txtBox: UITextField!
+    @IBOutlet weak var txtTruck: UITextField!
     
     var dataService = DataService.instance
+    
+    let df : DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +34,28 @@ class MedInventoryVC: UIViewController {
         tableView.dataSource = self
         
         DataService.instance.getAllMedications()
-        //dataService.getAllMedications { Success in
-        //}
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func homeBtnTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
 
-  
+    @IBAction func addMedBtnTapped(_ sender: UIButton) {
+        
+        print("Exp_Date : \(txtExpDate.text)")
+
+        dataService.addNewMedication(txtMedName.text!, expDate: txtExpDate.text!, quantity: Int(txtQuantity.text!)!, truck: txtTruck.text!, box: txtBox.text!) { Success in
+            if Success {
+                print("Med was successfully saved")
+            } else {
+                print("An Error occurred while saving the med")
+            }
+        }
+    }
+    
+    @IBAction func removeMedBtnTapped(_ sender: Any) {
+    }
+    
 }
 
 extension MedInventoryVC: DataServiceDelegate {
@@ -50,7 +72,6 @@ extension MedInventoryVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //print("Med count is: \(dataService.emsMeds.count)" )
         return dataService.meds.count
     }
     

@@ -1,0 +1,76 @@
+
+ ---------- MedInventoryVC -------------------------
+
+//formatter.dateStyle = .medium
+//formatter.timeStyle = .none
+//formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+
+//    let df : ISO8601DateFormatter = {
+//        let formatter = ISO8601DateFormatter()
+//        //formatter.formatOptions.remove(.withTimeZone)
+//        return formatter
+//    }()
+
+
+//    var dateFormatter = DateFormatter()
+//    dateFormatter.dateFormat = "yyyy-MM-dd"
+//    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+//    var expirationDate = DateFormatter()
+//    expirationDate.
+
+//dataService.getAllMedications { Success in
+//}
+
+//        let d = df.date(from: txtExpDate.text!)
+
+//        let d = df.date(from: txtExpDate.text!)
+//        let formatter = ISO8601DateFormatter()
+//        formatter.formatOptions.remove(.withTimeZone)
+//
+//        let date = formatter.date(from: txtExpDate.text!)
+
+-------------------- OutdatesVC --------------------------
+
+// Set pulls out the unique names from the array. Believe I'm trying to create an array of unique names from the medsToReplace array so I can create a condensed list that only lists the name of the med once and how many of that particular med that needs to be ordered.
+//        var unique = Array(Set(medsToReplace))
+
+
+//        print("Printing contents of Unique array")
+//          print(unique)
+//        print("Meds to Replace: \(medsToReplace.count)")
+//        print("Unique: \(unique.count)")
+//        medsToReplace.forEach() { print($0) }
+
+//        medsToReplace.forEach() {
+//            item in
+//            if !uniqueMedNames.contains(item.name) {
+//                uniqueMedNames += [item.name]
+//            }
+//            uniqueMedNames.sort()
+//        }
+//
+//        print(uniqueMedNames)
+
+//  This cellForRowAt function is the origianal I used to fill the tableview with the list of meds needing replacing. The array called, medsToReplace does not contain unique names or total the number of each med needed.
+
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        if let cell = tableView.dequeueReusableCell(withIdentifier: "ExpMedCell", for: indexPath) as? ExpMedCell {
+//            cell.configureCell(med: medsToReplace[indexPath.row])
+//            return cell
+//        } else {
+//            return UITableViewCell()
+//        }
+//    }
+
+-------------------- ExpMedication.swift ------------------------------
+
+//  ********************************** Create a String object from a Date *******************************************
+//  Commented out for now as it causes an error.
+//   Need to tweak these to my specific need.
+//        var formatter = DateFormatter()
+//        formatter.dateFormat = "dd-MM-yyyy"
+//        guard let unwrappedDate = dateFromString else { return }
+//
+//        //Using the dateFromString variable from before.
+//        let stringDate: String = formatter.string(from: dateFromString)
+//  ******************************************************************************************************************

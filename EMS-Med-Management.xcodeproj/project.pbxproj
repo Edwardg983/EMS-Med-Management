@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641225DC2087FB3A007017D2 /* Snippets in Resources */ = {isa = PBXBuildFile; fileRef = 641225DB2087FB3A007017D2 /* Snippets */; };
 		641247D91F89216300B8D132 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641247D71F89216300B8D132 /* LogInVC.swift */; };
 		641247DA1F89216300B8D132 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 641247D81F89216300B8D132 /* LogInVC.xib */; };
+		642F012E20826295003F4C31 /* UniqueMedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F012D20826295003F4C31 /* UniqueMedName.swift */; };
 		6463B2D21EBF9ECF00017F7D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463B2D11EBF9ECF00017F7D /* Launch Screen.storyboard */; };
 		646DE5A11FF42A92009E3006 /* MedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A01FF42A92009E3006 /* MedName.swift */; };
 		646DE5A31FF545D8009E3006 /* TruckName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A21FF545D8009E3006 /* TruckName.swift */; };
 		646DE5A51FF545EC009E3006 /* BoxName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A41FF545EC009E3006 /* BoxName.swift */; };
+		646DE5A71FF5A9C5009E3006 /* MedUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A61FF5A9C5009E3006 /* MedUsed.swift */; };
+		64787AC120C71A89003FE22A /* Medication_Inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 64787AC020C71A88003FE22A /* Medication_Inventory.json */; };
+		64787AC320C71AA3003FE22A /* Medication_Inventory_copy.json in Resources */ = {isa = PBXBuildFile; fileRef = 64787AC220C71AA3003FE22A /* Medication_Inventory_copy.json */; };
 		647DAC3A1E6F4B6500A25B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DAC391E6F4B6500A25B9B /* AppDelegate.swift */; };
 		647DAC3F1E6F4B6500A25B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DAC3D1E6F4B6500A25B9B /* Main.storyboard */; };
 		647DAC411E6F4B6500A25B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647DAC401E6F4B6500A25B9B /* Assets.xcassets */; };
@@ -21,6 +26,7 @@
 		647DF5BA1F86BBA8001E478D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DF5B91F86BBA8001E478D /* Constants.swift */; };
 		647DF5BC1F86E235001E478D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DF5BB1F86E235001E478D /* AuthService.swift */; };
 		649CDACA1F885669007C5FC1 /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CDAC91F885669007C5FC1 /* MedCell.swift */; };
+		649D1B6A203B9DB90028C7A4 /* ExpMedication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D1B69203B9DB90028C7A4 /* ExpMedication.swift */; };
 		649E873A1F8EB50C00EF2230 /* MedUsedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E87391F8EB50C00EF2230 /* MedUsedVC.swift */; };
 		64A618171E6F584700AEA888 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A618161E6F584700AEA888 /* MyButton.swift */; };
 		64A618191E6F5A7900AEA888 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A618181E6F5A7900AEA888 /* MainVC.swift */; };
@@ -30,15 +36,21 @@
 		64A618211E6F5CD600AEA888 /* MedUsedReplacedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A618201E6F5CD600AEA888 /* MedUsedReplacedVC.swift */; };
 		64A618231E6F5CF000AEA888 /* OutdatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A618221E6F5CF000AEA888 /* OutdatesVC.swift */; };
 		64A618251E6F5D0B00AEA888 /* TruckInventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A618241E6F5D0B00AEA888 /* TruckInventoryVC.swift */; };
+		64F75F282055C97300EBF5D4 /* ExpMedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F75F272055C97300EBF5D4 /* ExpMedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641225DB2087FB3A007017D2 /* Snippets */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets; sourceTree = "<group>"; };
 		641247D71F89216300B8D132 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		641247D81F89216300B8D132 /* LogInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInVC.xib; sourceTree = "<group>"; };
+		642F012D20826295003F4C31 /* UniqueMedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueMedName.swift; sourceTree = "<group>"; };
 		6463B2D11EBF9ECF00017F7D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		646DE5A01FF42A92009E3006 /* MedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedName.swift; sourceTree = "<group>"; };
 		646DE5A21FF545D8009E3006 /* TruckName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckName.swift; sourceTree = "<group>"; };
 		646DE5A41FF545EC009E3006 /* BoxName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxName.swift; sourceTree = "<group>"; };
+		646DE5A61FF5A9C5009E3006 /* MedUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedUsed.swift; sourceTree = "<group>"; };
+		64787AC020C71A88003FE22A /* Medication_Inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Medication_Inventory.json; sourceTree = "<group>"; };
+		64787AC220C71AA3003FE22A /* Medication_Inventory_copy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Medication_Inventory_copy.json; sourceTree = "<group>"; };
 		647DAC361E6F4B6500A25B9B /* EMS-Med-Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EMS-Med-Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		647DAC391E6F4B6500A25B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		647DAC3E1E6F4B6500A25B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,7 @@
 		647DF5B91F86BBA8001E478D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		647DF5BB1F86E235001E478D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		649CDAC91F885669007C5FC1 /* MedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
+		649D1B69203B9DB90028C7A4 /* ExpMedication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpMedication.swift; sourceTree = "<group>"; };
 		649E87391F8EB50C00EF2230 /* MedUsedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedUsedVC.swift; sourceTree = "<group>"; };
 		64A618161E6F584700AEA888 /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		64A618181E6F5A7900AEA888 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -58,6 +71,7 @@
 		64A618201E6F5CD600AEA888 /* MedUsedReplacedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedUsedReplacedVC.swift; sourceTree = "<group>"; };
 		64A618221E6F5CF000AEA888 /* OutdatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutdatesVC.swift; sourceTree = "<group>"; };
 		64A618241E6F5D0B00AEA888 /* TruckInventoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckInventoryVC.swift; sourceTree = "<group>"; };
+		64F75F272055C97300EBF5D4 /* ExpMedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpMedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,8 @@
 		647DAC381E6F4B6500A25B9B /* EMS-Med-Management */ = {
 			isa = PBXGroup;
 			children = (
+				64787AC220C71AA3003FE22A /* Medication_Inventory_copy.json */,
+				64787AC020C71A88003FE22A /* Medication_Inventory.json */,
 				647DF5AC1F858F5B001E478D /* Model */,
 				647DF5AD1F858F6A001E478D /* View */,
 				647DF5AE1F858F79001E478D /* Controller */,
@@ -103,6 +119,7 @@
 				64A618221E6F5CF000AEA888 /* OutdatesVC.swift */,
 				64A618241E6F5D0B00AEA888 /* TruckInventoryVC.swift */,
 				647DAC451E6F4B6500A25B9B /* Info.plist */,
+				641225DB2087FB3A007017D2 /* Snippets */,
 			);
 			path = "EMS-Med-Management";
 			sourceTree = "<group>";
@@ -114,6 +131,9 @@
 				646DE5A01FF42A92009E3006 /* MedName.swift */,
 				646DE5A21FF545D8009E3006 /* TruckName.swift */,
 				646DE5A41FF545EC009E3006 /* BoxName.swift */,
+				646DE5A61FF5A9C5009E3006 /* MedUsed.swift */,
+				649D1B69203B9DB90028C7A4 /* ExpMedication.swift */,
+				642F012D20826295003F4C31 /* UniqueMedName.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +145,7 @@
 				6463B2D11EBF9ECF00017F7D /* Launch Screen.storyboard */,
 				649CDAC91F885669007C5FC1 /* MedCell.swift */,
 				641247D81F89216300B8D132 /* LogInVC.xib */,
+				64F75F272055C97300EBF5D4 /* ExpMedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,12 +206,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Edward Greene";
 				TargetAttributes = {
 					647DAC351E6F4B6500A25B9B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = T78D8LV7RN;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -219,8 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6463B2D21EBF9ECF00017F7D /* Launch Screen.storyboard in Resources */,
+				64787AC120C71A89003FE22A /* Medication_Inventory.json in Resources */,
 				647DAC411E6F4B6500A25B9B /* Assets.xcassets in Resources */,
+				64787AC320C71AA3003FE22A /* Medication_Inventory_copy.json in Resources */,
 				641247DA1F89216300B8D132 /* LogInVC.xib in Resources */,
+				641225DC2087FB3A007017D2 /* Snippets in Resources */,
 				647DAC3F1E6F4B6500A25B9B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,11 +263,15 @@
 				646DE5A51FF545EC009E3006 /* BoxName.swift in Sources */,
 				646DE5A11FF42A92009E3006 /* MedName.swift in Sources */,
 				64A6181D1E6F5C8F00AEA888 /* ListOfTrucksVC.swift in Sources */,
+				642F012E20826295003F4C31 /* UniqueMedName.swift in Sources */,
 				64A618191E6F5A7900AEA888 /* MainVC.swift in Sources */,
 				647DF5B61F86AFB0001E478D /* Medication.swift in Sources */,
 				647DF5B81F86B933001E478D /* DataService.swift in Sources */,
 				647DF5BC1F86E235001E478D /* AuthService.swift in Sources */,
 				641247D91F89216300B8D132 /* LogInVC.swift in Sources */,
+				649D1B6A203B9DB90028C7A4 /* ExpMedication.swift in Sources */,
+				64F75F282055C97300EBF5D4 /* ExpMedCell.swift in Sources */,
+				646DE5A71FF5A9C5009E3006 /* MedUsed.swift in Sources */,
 				646DE5A31FF545D8009E3006 /* TruckName.swift in Sources */,
 				64A618211E6F5CD600AEA888 /* MedUsedReplacedVC.swift in Sources */,
 				649E873A1F8EB50C00EF2230 /* MedUsedVC.swift in Sources */,
@@ -277,15 +306,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -327,15 +364,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -370,7 +415,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.EdwardGreene.EMS-Med-Management";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -384,7 +430,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.EdwardGreene.EMS-Med-Management";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

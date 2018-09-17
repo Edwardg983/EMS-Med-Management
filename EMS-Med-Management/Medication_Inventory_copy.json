@@ -1,0 +1,1142 @@
+[{
+        "quantity": 1,
+        "name": "Adenosine",
+        "expDate": date("2017-12-31T00:00:00Z"),
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Adenosine",
+        "expDate": {$date:"2013-11-20T23:32:18Z"},
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 3,
+        "name": "Adenosine",
+        "expDate": { "date": "2018-8-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Adenosine",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 4,
+        "name": "Albuterol",
+        "expDate": { "date": "2017-10-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 3,
+        "name": "Amiodarone",
+        "expDate": { "date": "2017-6-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 4,
+        "name": "ASA",
+        "expDate": { "date": "2018-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 4,
+        "name": "ASA",
+        "expDate": { "date": "2017-11-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Atropine",
+        "expDate": { "date": "2018-2-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Atropine",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Benadryl",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Calcium Gluconate",
+        "expDate": { "date": "2017-5-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "D10W",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "D5W",
+        "expDate": { "date": "2018-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Dexamethasone",
+        "expDate": { "date": "2018-11-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Diltiazem",
+        "expDate": { "date": "2017-11-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Dopamine",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 3,
+        "name": "DuoNeb",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:1000",
+        "expDate": { "date": "2017-6-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 3,
+        "name": "Epi 1:1000",
+        "expDate": { "date": "2018-6-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:1000",
+        "expDate": { "date": "2017-11-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 3,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-4-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 3,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-5-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-3-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-11-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Glucagon",
+        "expDate": { "date": "2018-2-28T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Haldol",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Haldol",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Ketorolac",
+        "expDate": { "date": "2018-2-28T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Ketorolac",
+        "expDate": { "date": "2018-8-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Levophed",
+        "expDate": { "date": "2017-10-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Lido 1%",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Lido 2%",
+        "expDate": { "date": "2018-4-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Lido 2%",
+        "expDate": { "date": "2018-5-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Lido Drip",
+        "expDate": { "date": "2017-4-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Mag Sulfate",
+        "expDate": { "date": "2018-7-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Metroprolol",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Metroprolol",
+        "expDate": { "date": "2018-11-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Narcan",
+        "expDate": { "date": "2017-11-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 4,
+        "name": "Narcan",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Narcotics",
+        "expDate": { "date": "2017-4-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "NS Vials",
+        "expDate": { "date": "2018-6-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "NTG Paste",
+        "expDate": { "date": "2018-9-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Odansetron IV",
+        "expDate": { "date": "2017-11-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Odansetron ODT",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Oxytocin",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Sodium BiCarb",
+        "expDate": { "date": "2017-4-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Solu-Cortef",
+        "expDate": { "date": "2019-5-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Solu-Medrol",
+        "expDate": { "date": "2018-2-28T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Solu-Medrol",
+        "expDate": { "date": "2019-2-28T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Sweet-Ease (sucrose}",
+        "expDate": { "date": "2017-5-4T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Tetracaine",
+        "expDate": { "date": "2017-2-28T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Tylenol Liquid",
+        "expDate": { "date": "2017-11-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Tylenol Suppositories 120 mg",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Tylenol Suppositories 325 mg",
+        "expDate": { "date": "2018-12-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Tylenol Suppositories 80 mg",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Tylenol Tablet",
+        "expDate": { "date": "2017-12-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Albuterol",
+        "expDate": { "date": "2017-10-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Albuterol",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 4,
+        "name": "ASA",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 4,
+        "name": "ASA",
+        "expDate": { "date": "2017-5-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "D10",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "DuoNeb",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "DuoNeb",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "Epi 1:1000",
+        "expDate": { "date": "2018-6-1T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 3,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi-Pen",
+        "expDate": { "date": "2017-4-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi-Pen",
+        "expDate": { "date": "2018-1-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "Epi-Pen Jr",
+        "expDate": { "date": "2018-3-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Glucagon",
+        "expDate": { "date": "2017-8-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Narcan",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 3,
+        "name": "Narcan",
+        "expDate": { "date": "2017-11-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Narcan",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "NTG",
+        "expDate": { "date": "2018-6-30T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Odansetron ODT",
+        "expDate": { "date": "2017-12-31T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Sweet-Ease (sucrose}",
+        "expDate": { "date": "2017-5-4T00:00:00Z" },
+        "truck": "Osage",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Albuterol",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Albuterol",
+        "expDate": { "date": "2018-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "ASA",
+        "expDate": { "date": "2018-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 4,
+        "name": "ASA",
+        "expDate": { "date": "2017-12-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 3,
+        "name": "ASA",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "D10",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "DuoNeb",
+        "expDate": { "date": "2018-7-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "DuoNeb",
+        "expDate": { "date": "2018-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:1000",
+        "expDate": { "date": "2018-7-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:1000",
+        "expDate": { "date": "2017-8-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-11-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "Epi-Pen",
+        "expDate": { "date": "2017-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "Epi-Pen Jr",
+        "expDate": { "date": "2018-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Glucagon",
+        "expDate": { "date": "2018-2-28T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 2,
+        "name": "Narcan",
+        "expDate": { "date": "2017-10-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 3,
+        "name": "Narcan",
+        "expDate": { "date": "2017-11-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "NTG",
+        "expDate": { "date": "2018-6-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Odansetron ODT",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Sweet-Ease (sucrose}",
+        "expDate": { "date": "2018-5-4T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Advanced"
+    },
+    {
+        "quantity": 1,
+        "name": "Adenosine",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Adenosine",
+        "expDate": { "date": "2018-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Adenosine",
+        "expDate": { "date": "2017-11-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Adenosine",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Albuterol",
+        "expDate": { "date": "2018-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Albuterol",
+        "expDate": { "date": "2017-10-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Albuterol",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Amiodarone",
+        "expDate": { "date": "2017-5-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Amiodarone",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Amiodarone",
+        "expDate": { "date": "2017-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 4,
+        "name": "ASA",
+        "expDate": { "date": "2017-6-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 4,
+        "name": "ASA",
+        "expDate": { "date": "2018-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Atropine",
+        "expDate": { "date": "2017-6-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Atropine",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Atropine",
+        "expDate": { "date": "2018-2-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Benadryl",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Calcium Gluconate",
+        "expDate": { "date": "2017-5-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "D10W",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "D5W",
+        "expDate": { "date": "2018-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "D5W with Diltiazem",
+        "expDate": { "date": "2017-9-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Dexamethasone",
+        "expDate": { "date": "2018-11-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Diltiazam",
+        "expDate": { "date": "2017-10-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Dopamine",
+        "expDate": { "date": "2017-4-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "DuoNeb",
+        "expDate": { "date": "2018-6-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "DuoNeb",
+        "expDate": { "date": "2018-5-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "DuoNeb",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 4,
+        "name": "Epi 1:1000",
+        "expDate": { "date": "2017-8-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:1000",
+        "expDate": { "date": "2017-4-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-11-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 4,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 3,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Epi 1:10000",
+        "expDate": { "date": "2017-6-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Glucagon",
+        "expDate": { "date": "2018-2-28T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Haldol",
+        "expDate": { "date": "2017-9-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Haldol",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Ketorolac",
+        "expDate": { "date": "2018-2-28T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Ketorolac",
+        "expDate": { "date": "2017-6-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Levophed",
+        "expDate": { "date": "2017-10-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Lido 1%",
+        "expDate": { "date": "2018-6-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Lido 1%",
+        "expDate": { "date": "2020-6-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Lido 2%",
+        "expDate": { "date": "2017-12-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Lido 2%",
+        "expDate": { "date": "2018-4-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Lido Drip",
+        "expDate": { "date": "2017-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Mag Sulfate",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Metroprolol",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Metroprolol",
+        "expDate": { "date": "2018-11-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 5,
+        "name": "Narcan",
+        "expDate": { "date": "2017-7-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Narcotics",
+        "expDate": { "date": "2017-7-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "NTG Paste",
+        "expDate": { "date": "2018-7-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "NTG Paste",
+        "expDate": { "date": "2018-9-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Odansetron",
+        "expDate": { "date": "2018-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Odansetron IV",
+        "expDate": { "date": "2017-12-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Odansetron ODT",
+        "expDate": { "date": "2017-5-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Oxytocin",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Sodium BiCarb",
+        "expDate": { "date": "2017-4-1T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Solu-Cortef",
+        "expDate": { "date": "2019-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Solu-Medrol",
+        "expDate": { "date": "2019-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Solu-Medrol",
+        "expDate": { "date": "2017-3-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Sweet-Ease (sucrose}",
+        "expDate": { "date": "2017-5-4T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Tetracaine",
+        "expDate": { "date": "2017-2-28T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Tylenol Liquid",
+        "expDate": { "date": "2017-11-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Tylenol Suppositories 120 mg",
+        "expDate": { "date": "2017-8-31T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Tylenol Suppositories 325 mg",
+        "expDate": { "date": "2018-12-31v" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 1,
+        "name": "Tylenol Suppositories 80 mg",
+        "expDate": { "date": "2018-4-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    },
+    {
+        "quantity": 2,
+        "name": "Tylenol Tablets",
+        "expDate": { "date": "2018-11-30T00:00:00Z" },
+        "truck": "PL Custom",
+        "box": "Medic"
+    }
+]

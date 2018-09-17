@@ -1,34 +1,34 @@
 //
-//  MedName.swift
+//  MedUsed.swift
 //  EMS-Med-Management
 //
-//  Created by Edward Greene on 12/27/17.
+//  Created by Edward Greene on 12/28/17.
 //  Copyright © 2017 Edward Greene. All rights reserved.
 //
 
 import Foundation
 
-class MedName {
+class MedUsed {
     
-    static func parseMedNameJSONData(data: Data) -> [String] {
-        var medNames = [String]()
+    static func parseMedUsedJSONData(data: Data) -> [String] {
+        var medUsed = [String]()
         
         do {
             let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-// Parse JSON Data.
+ // Parse JSON Data.
             
             if let names = jsonResult as? [String] {
                 for name in names {
                     var newName = ""
                     newName = name
-
-                    medNames.append(newName)
+                    
+                    medUsed.append(newName)
                 }
-           }
+            }
             
         } catch let err {
             print(err)
         }
-        return medNames
+        return medUsed
     }
 }

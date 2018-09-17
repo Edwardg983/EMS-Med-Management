@@ -370,6 +370,7 @@
 				6404AAB81EBE7AF300CC9B71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

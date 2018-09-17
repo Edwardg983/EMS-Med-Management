@@ -18,6 +18,7 @@ class DataService {
     weak var delegate: DataServiceDelegate?
     var meds = [Medication]()  // All meds
     var medsUsed = [Medication]() // Meds used on a call
+    var expiringMeds = [ExpMedication]() // Expiring meds
     var distinctMedNames = [String]()
     var distinctTruckNames = [String]()
     var distinctBoxNames = [String]()
@@ -57,9 +58,43 @@ class DataService {
         session.finishTasksAndInvalidate()
     }
     
-    // POST add a new medication
-    func addNewMedication(_ name: String, expDate: Date, quantity: Int, truck: String, box: String, completion: @escaping callback) {
+    // GET all expiring medications
+    func getAllExpiringMedications() {
+        let sessionConfig = URLSessionConfiguration.default
         
+        // Create session, and optionally set a URLSessionDelegate
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        // Create the request
+        // Get all medications (GET /api/v1/medication)
+        guard let URL = URL(string: GET_ALL_MEDS_URL) else {return}
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task Succeeded: HTTP \(statusCode)")
+                
+                if let data = data {
+                    self.expiringMeds = ExpMedication.parseExpMedicationJSONData(data: data)
+                    self.delegate?.medicationsLoaded()
+                    
+                }
+            } else {
+                // Failure
+                print("URL Session Task Failed: \(error!.localizedDescription)")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+        
+    }
+    
+    // POST add a new medication
+    func addNewMedication(_ name: String, expDate: String, quantity: Int, truck: String, box: String, completion: @escaping callback) {
+        print("Inside DataService add new med before the construct JSON")
         // Construct JSON
         let json: [String: Any] = [
             "name": name,
@@ -68,6 +103,16 @@ class DataService {
             "truck": truck,
             "box": box
         ]
+        
+        // Debugging code
+        print("This is the JSON object: \(json)")
+        
+        if JSONSerialization.isValidJSONObject(json) {
+            print("Object is valid")
+        } else {
+            print("Object is not valid")
+        }
+        // End Debugging code
         
         do {
             // Serialize JSON
@@ -80,13 +125,13 @@ class DataService {
             guard let URL = URL(string: POST_ADD_NEW_MED) else { return }
             var request = URLRequest(url: URL)
             request.httpMethod = "POST"
-            
-            guard let token = AuthService.instance.authToken else {
-                completion(false)
-                return
-            }
-            
-            request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+//   Commented out until AuthService is implemented.
+//            guard let token = AuthService.instance.authToken else {
+//                completion(false)
+//                return
+//            }
+//
+//            request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             
             request.httpBody = jsonData
@@ -123,14 +168,17 @@ class DataService {
     // TODO: Need to create a function that works with the MedUsedVC. This function will need to take the info from the text fields and search the DB. The returned info will populate the table view. This function will be similar to the functions Jack used to find a specific truck for its reviews, only it will use  more fields which need to be matched. DataService video at 22 min mark.
     
     // ********  12/27/17 This function has not been tested yet. Since I'm not sure how the actual collection name is determined. This function might create a medsUsed collection which will need to be reset to an empty array after useage  *******
+    // ********  12/28/17 Has been tested and works as hoped. One problem encountered, not able to search for Epi 1:10000. Assume Epi 1:1000 will be the same. Also need to add error handling, if it searches and does not come back with any results.
     
     // GET med used on a call
     func getMedUsed(_ name: String, truck: String, box: String) {
+        print("These are the variables passed in: \(name) \(truck) \(box)")
         let sessionConfig = URLSessionConfiguration.default
         
         let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
         
-        guard let URL = URL(string: "\(GET_MED_USED)/\(name)\(truck)\(box)") else { return }
+        guard let URL = URL(string: "\(GET_MED_USED)/\(name)" + "/" + "\(truck)" + "/" + "\(box)") else { return }
+        print(URL)
         var request = URLRequest(url: URL)
         request.httpMethod = "GET"
         
@@ -140,8 +188,10 @@ class DataService {
                 let statusCode = (response as! HTTPURLResponse).statusCode
                 print("URL Session Task Succeeded: HTTP \(statusCode)")
                 // Parse JSON data
+//                print(data)
                 if let data = data {
                     self.medsUsed = Medication.parseMedicationJSONData(data: data)
+//                    print(self.medsUsed)
                     self.delegate?.medicationsLoaded()
                 }
             } else {

@@ -15,7 +15,7 @@ class TruckName {
         
         do {
             let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-            // Parse JSON Data.
+// Parse JSON Data.
             
             if let names = jsonResult as? [String] {
                 for name in names {
@@ -28,7 +28,6 @@ class TruckName {
         } catch let err {
             print(err)
         }
-        print("Truck Names count \(truckNames.count)")
         return truckNames
     }
 }
