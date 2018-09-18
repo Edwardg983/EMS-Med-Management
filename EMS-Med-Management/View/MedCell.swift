@@ -10,6 +10,8 @@ import UIKit
 
 class MedCell: UITableViewCell {
     
+    var id: String = ""
+    
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtQuantity: UITextField!
     @IBOutlet weak var txtExpDate: UITextField!
@@ -22,6 +24,7 @@ class MedCell: UITableViewCell {
     }
 
     func configureCell(med: Medication) {
+        id = med.id
         txtName.text = med.name
         txtQuantity.text = String(med.quantity)
         txtExpDate.text = med.expDate

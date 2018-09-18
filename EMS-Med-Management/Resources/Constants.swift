@@ -35,6 +35,9 @@ let GET_DISTINCT_BOX_NAMES = "\(BASE_API_URL)/medication/getDistinctBoxNames"
 // POST add new medication
 let POST_ADD_NEW_MED = "\(BASE_API_URL)/medication/add"
 
+// PUT update med used
+let PUT_UPDATE_MED_USED = "\(BASE_API_URL)/medication/update"
+
 // Boolean auth UserDefaults keys
 let DEFAULTS_REGISTERED = "isRegistered"
 let DEFAULTS_AUTHENTICATED = "isAuthenicated"

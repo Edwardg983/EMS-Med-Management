@@ -41,8 +41,6 @@ class MedInventoryVC: UIViewController {
     }
 
     @IBAction func addMedBtnTapped(_ sender: UIButton) {
-        
-        print("Exp_Date : \(txtExpDate.text)")
 
         dataService.addNewMedication(txtMedName.text!, expDate: txtExpDate.text!, quantity: Int(txtQuantity.text!)!, truck: txtTruck.text!, box: txtBox.text!) { Success in
             if Success {

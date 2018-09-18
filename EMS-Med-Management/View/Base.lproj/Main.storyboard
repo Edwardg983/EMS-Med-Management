@@ -526,6 +526,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelBtnPressed:" destination="hOE-9k-Q1L" eventType="touchUpInside" id="z9N-rg-P3j"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOn-lm-okB" customClass="myButton" customModule="EMS_Med_Management" customModuleProvider="target">
                                 <rect key="frame" x="238" y="774" width="146" height="44"/>
@@ -534,6 +537,9 @@
                                 <state key="normal" title="Update">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="updateBtnPressed:" destination="hOE-9k-Q1L" eventType="touchUpInside" id="mhO-lT-kFs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.44705882352941173" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

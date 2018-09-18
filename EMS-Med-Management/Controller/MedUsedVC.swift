@@ -93,6 +93,8 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
             let destinationVC = segue.destination as! MedUsedReplacedVC
             
             destinationVC.data = sender as? MedCell
+            //destinationVC.data = sender as? Medication
+            //destinationVC.id = 
         }
     }
 
