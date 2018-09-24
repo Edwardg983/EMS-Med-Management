@@ -19,6 +19,7 @@ class DataService {
     var meds = [Medication]()  // All meds
     var medsUsed = [Medication]() // Meds used on a call
     var expiringMeds = [ExpMedication]() // Expiring meds
+    var medExist = [Medication]() // Does med with new expDate already exist
     var distinctMedNames = [String]()
     var distinctTruckNames = [String]()
     var distinctBoxNames = [String]()
@@ -103,16 +104,6 @@ class DataService {
             "truck": truck,
             "box": box
         ]
-        
-        // Debugging code
-        print("This is the JSON object: \(json)")
-        
-        if JSONSerialization.isValidJSONObject(json) {
-            print("Object is valid")
-        } else {
-            print("Object is not valid")
-        }
-        // End Debugging code
         
         do {
             // Serialize JSON
@@ -229,15 +220,10 @@ class DataService {
         }
     }
     
-    
-    // TODO: Need to create a function that works with the MedUsedVC. This function will need to take the info from the text fields and search the DB. The returned info will populate the table view. This function will be similar to the functions Jack used to find a specific truck for its reviews, only it will use  more fields which need to be matched. DataService video at 22 min mark.
-    
-    // ********  12/27/17 This function has not been tested yet. Since I'm not sure how the actual collection name is determined. This function might create a medsUsed collection which will need to be reset to an empty array after useage  *******
-    // ********  12/28/17 Has been tested and works as hoped. One problem encountered, not able to search for Epi 1:10000. Assume Epi 1:1000 will be the same. Also need to add error handling, if it searches and does not come back with any results.
-    
     // GET med used on a call
     func getMedUsed(_ name: String, truck: String, box: String) {
-        print("These are the variables passed in: \(name) \(truck) \(box)")
+        medsUsed = []
+        // print("These are the variables passed in: \(name) \(truck) \(box)")
         let sessionConfig = URLSessionConfiguration.default
         
         let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
@@ -251,17 +237,71 @@ class DataService {
             if (error == nil) {
                 // Success
                 let statusCode = (response as! HTTPURLResponse).statusCode
-                print("URL Session Task Succeeded: HTTP \(statusCode)")
+                print("URL Session Task In getMedUsed Succeeded: HTTP \(statusCode)")
                 // Parse JSON data
-//                print(data)
                 if let data = data {
                     self.medsUsed = Medication.parseMedicationJSONData(data: data)
-//                    print(self.medsUsed)
                     self.delegate?.medicationsLoaded()
                 }
             } else {
                 // Failure
                 print("URL Session Task Failed: \(error?.localizedDescription)")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
+    // GET check if meds with new expDate already exist in DB
+    func doesMedExist(_ name: String, truck: String, box: String, expDate: String) {
+        print("These are the variables passed in: \(name) \(truck) \(box) \(expDate)")
+        let sessionConfig = URLSessionConfiguration.default
+        
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        guard let URL = URL(string: "\(GET_MED_EXISTS)/\(name)" + "/" + "\(truck)" + "/" + "\(box)" + "/" + "\(expDate)") else {return}
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task In doesMedExist Succeeded: HTTP \(statusCode)")
+                // Parse JSON data
+                print("The data is: ", data)
+                if let data = data {
+                    self.medExist = Medication.parseMedicationJSONData(data: data)
+                    print("MedExist: ",self.medExist)
+                    self.delegate?.medicationsLoaded()
+                }
+            } else {
+                // Failure
+                print("URL Session Task Failed: \(error?.localizedDescription)")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
+    func deleteMed(_ id: String, completion: @escaping callback){
+        let sessionConfig = URLSessionConfiguration.default
+        
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        guard let URL = URL(string: "\(DELETE_MED)/\(id)") else {return}
+        
+        var request = URLRequest(url: URL)
+        request.httpMethod = "DELETE"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task in DELETE Succeeded: HTTP \(statusCode)")
+            } else {
+                // Failure
+                print("URL Session Task in DELETE Failed: \(error?.localizedDescription)")
             }
         })
         task.resume()

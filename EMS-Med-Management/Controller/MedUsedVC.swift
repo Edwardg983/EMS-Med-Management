@@ -34,8 +34,6 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         medUsedPicker.dataSource = self
         tableView.delegate = self
         tableView.dataSource = self
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func homeBtnTapped(_ sender: Any) {
@@ -46,11 +44,7 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         let name = DataService.instance.distinctMedNames[medUsedPicker.selectedRow(inComponent: 0)]
         let truck = DataService.instance.distinctTruckNames[truckPicker.selectedRow(inComponent: 0)]
         let box = DataService.instance.distinctBoxNames[boxPicker.selectedRow(inComponent: 0)]
-/*
-        print(name)
-        print(truck)
-        print(box)
-  */
+
         dataService.getMedUsed(name, truck: truck, box: box)
     }
     
@@ -69,7 +63,6 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         if pickerView == medUsedPicker{
             return DataService.instance.distinctMedNames.count
         }
-        
         
         return 0
     }
@@ -93,12 +86,8 @@ class MedUsedVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
             let destinationVC = segue.destination as! MedUsedReplacedVC
             
             destinationVC.data = sender as? MedCell
-            //destinationVC.data = sender as? Medication
-            //destinationVC.id = 
         }
     }
-
-
 }
 
 extension MedUsedVC: DataServiceDelegate {
@@ -128,9 +117,7 @@ extension MedUsedVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Think this is the func I need to use to trigger segue
-        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
         performSegue(withIdentifier: "goToMedUsedReplaced", sender: self)
     }
 }

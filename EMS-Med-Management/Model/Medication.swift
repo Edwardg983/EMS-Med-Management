@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Medication {
+class Medication: NSObject {
     var id: String = ""
     var name: String = ""
     var expDate: String = ""
@@ -40,5 +40,9 @@ class Medication {
             print(err)
         }
         return medications
+    }
+    
+    override var description:String {
+        return "name: \(self.name) \nExp Date: \(self.expDate) \nQuantity: \(self.quantity) \nTruck: \(self.truck) \nBox: \(self.box) \n"
     }
 }

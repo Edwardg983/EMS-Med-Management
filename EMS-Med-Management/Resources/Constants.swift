@@ -32,11 +32,17 @@ let GET_DISTINCT_TRUCK_NAMES = "\(BASE_API_URL)/medication/getDistinctTruckNames
 // GET distinct box names
 let GET_DISTINCT_BOX_NAMES = "\(BASE_API_URL)/medication/getDistinctBoxNames"
 
+// GET check if meds with new expDate already exist in DB
+let GET_MED_EXISTS = "\(BASE_API_URL)/medication/getMedExists"
+
 // POST add new medication
 let POST_ADD_NEW_MED = "\(BASE_API_URL)/medication/add"
 
 // PUT update med used
 let PUT_UPDATE_MED_USED = "\(BASE_API_URL)/medication/update"
+
+// DELETE delete med by ID
+let DELETE_MED = "\(BASE_API_URL)/medication"
 
 // Boolean auth UserDefaults keys
 let DEFAULTS_REGISTERED = "isRegistered"

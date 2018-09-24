@@ -23,7 +23,6 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         
         DataService.instance.delegate = self
-        //DataService.instance.getAllMedications()
         DataService.instance.getDistinctMedNames()
         DataService.instance.getDistinctTruckNames()
         DataService.instance.getDistinctBoxNames()
@@ -32,6 +31,5 @@ class MainVC: UIViewController {
 
 extension MainVC: DataServiceDelegate {
     func medicationsLoaded() {
- //      print(DataService.instance.meds)
     }
 }

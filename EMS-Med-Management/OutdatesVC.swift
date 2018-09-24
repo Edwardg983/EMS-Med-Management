@@ -88,14 +88,6 @@ class OutdatesVC: UIViewController {
 
         
 // This will create the dictionary that holds the unique med names along with the count of how many need to be replace of each unique med in the list.
-//        convertedUniqueMedNames = []
-//        uniqueMedNames = [:]
-        
-//        print("convertedUniqueMedNames contains: \(convertedUniqueMedNames)")
-//        print("\n")
-//        print("uniqueMedNames contains: \(uniqueMedNames)")
-        
-
         
         medsToReplace.forEach() {
             item in
@@ -111,10 +103,6 @@ class OutdatesVC: UIViewController {
         
 // Converts the dictionary back to an array. I did this because I have not been able to figure out how to fill a tableview from a dictionary.
         convertedUniqueMedNames = Array(self.uniqueMedNames.keys)
-        
-//        print("convertedUniqueMedNames contains: \(convertedUniqueMedNames)")
-//        print("\n")
-//        print("uniqueMedNames contains: \(uniqueMedNames)")
        
         medicationsLoaded()
         
