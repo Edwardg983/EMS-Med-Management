@@ -20,6 +20,12 @@ let BASE_API_URL = "http://localhost:3005/api/v1"
 // GET all meds
 let GET_ALL_MEDS_URL = "\(BASE_API_URL)/medication"
 
+// GET all trucks
+let GET_ALL_TRUCKS_URL = "\(BASE_API_URL)/truck"
+
+// GET all boxs
+let GET_ALL_BOXS_URL = "\(BASE_API_URL)/box"
+
 // GET med used data
 let GET_MED_USED = "\(BASE_API_URL)/medication/medUsed"
 
@@ -37,6 +43,12 @@ let GET_MED_EXISTS = "\(BASE_API_URL)/medication/getMedExists"
 
 // POST add new medication
 let POST_ADD_NEW_MED = "\(BASE_API_URL)/medication/add"
+
+// POST add new truck
+let POST_ADD_NEW_TRUCK = "\(BASE_API_URL)/truck/add"
+
+// POST add new box
+let POST_ADD_NEW_BOX = "\(BASE_API_URL)/box/add"
 
 // PUT update med used
 let PUT_UPDATE_MED_USED = "\(BASE_API_URL)/medication/update"

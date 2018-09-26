@@ -123,7 +123,6 @@ extension OutdatesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Number of converted meds is \(convertedUniqueMedNames.count)")
         return convertedUniqueMedNames.count
     }
     

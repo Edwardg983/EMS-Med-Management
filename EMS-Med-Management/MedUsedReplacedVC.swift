@@ -41,10 +41,20 @@ class MedUsedReplacedVC: UIViewController {
         txtNumWithExpDate1.text = data?.txtQuantity.text
     }
     
-    // TODO: Create error handling. Prevent neg number, prevent exp date that already passed.
-    
     @IBAction func updateBtnPressed(_ sender: Any) {
         var numberUsed = 0
+        
+        // Error handling for negative numbers
+        if(Int(Int(txtNumWithExpDate1.text!)! - (Int(txtNumWithExpDate2.text!))!) < 0){
+            showAlert(with: "Error", message: "It is not possible to use more than what is currently in inventory. Please adjust the number used with the new expiration date")
+            return
+        }
+        
+        // Error handling for expiration date that has past.
+        if(stringToDate(date: txtNewExpDate.text!) < Date()) {
+            showAlert(with: "Error", message: "You have entered an expiration date that has already past.")
+            return
+        }
         
         let expDateExists = dataService.medsUsed.map({$0.expDate})
         
@@ -131,6 +141,13 @@ class MedUsedReplacedVC: UIViewController {
     }
     @IBAction func homeBtnTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func showAlert(with title: String?, message: String?) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
     }
 
 }

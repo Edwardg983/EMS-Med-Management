@@ -13,8 +13,8 @@
 		642F012E20826295003F4C31 /* UniqueMedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F012D20826295003F4C31 /* UniqueMedName.swift */; };
 		6463B2D21EBF9ECF00017F7D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463B2D11EBF9ECF00017F7D /* Launch Screen.storyboard */; };
 		646DE5A11FF42A92009E3006 /* MedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A01FF42A92009E3006 /* MedName.swift */; };
-		646DE5A31FF545D8009E3006 /* TruckName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A21FF545D8009E3006 /* TruckName.swift */; };
-		646DE5A51FF545EC009E3006 /* BoxName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A41FF545EC009E3006 /* BoxName.swift */; };
+		646DE5A31FF545D8009E3006 /* UniqueTruckName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A21FF545D8009E3006 /* UniqueTruckName.swift */; };
+		646DE5A51FF545EC009E3006 /* UniqueBoxName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A41FF545EC009E3006 /* UniqueBoxName.swift */; };
 		646DE5A71FF5A9C5009E3006 /* MedUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646DE5A61FF5A9C5009E3006 /* MedUsed.swift */; };
 		64787AC120C71A89003FE22A /* Medication_Inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 64787AC020C71A88003FE22A /* Medication_Inventory.json */; };
 		64787AC320C71AA3003FE22A /* Medication_Inventory_copy.json in Resources */ = {isa = PBXBuildFile; fileRef = 64787AC220C71AA3003FE22A /* Medication_Inventory_copy.json */; };
@@ -28,6 +28,10 @@
 		649CDACA1F885669007C5FC1 /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649CDAC91F885669007C5FC1 /* MedCell.swift */; };
 		649D1B6A203B9DB90028C7A4 /* ExpMedication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D1B69203B9DB90028C7A4 /* ExpMedication.swift */; };
 		649E873A1F8EB50C00EF2230 /* MedUsedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E87391F8EB50C00EF2230 /* MedUsedVC.swift */; };
+		649F934C215A7D3C009A9D4F /* TruckCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F934B215A7D3C009A9D4F /* TruckCelll.swift */; };
+		649F934E215A8CD8009A9D4F /* BoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F934D215A8CD8009A9D4F /* BoxCell.swift */; };
+		649F9350215C27AF009A9D4F /* TruckName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F934F215C27AF009A9D4F /* TruckName.swift */; };
+		649F9352215C2D1F009A9D4F /* BoxName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F9351215C2D1F009A9D4F /* BoxName.swift */; };
 		64A618171E6F584700AEA888 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A618161E6F584700AEA888 /* MyButton.swift */; };
 		64A618191E6F5A7900AEA888 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A618181E6F5A7900AEA888 /* MainVC.swift */; };
 		64A6181B1E6F5C5500AEA888 /* ListOfMedBoxesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6181A1E6F5C5500AEA888 /* ListOfMedBoxesVC.swift */; };
@@ -46,8 +50,8 @@
 		642F012D20826295003F4C31 /* UniqueMedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueMedName.swift; sourceTree = "<group>"; };
 		6463B2D11EBF9ECF00017F7D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		646DE5A01FF42A92009E3006 /* MedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedName.swift; sourceTree = "<group>"; };
-		646DE5A21FF545D8009E3006 /* TruckName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckName.swift; sourceTree = "<group>"; };
-		646DE5A41FF545EC009E3006 /* BoxName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxName.swift; sourceTree = "<group>"; };
+		646DE5A21FF545D8009E3006 /* UniqueTruckName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueTruckName.swift; sourceTree = "<group>"; };
+		646DE5A41FF545EC009E3006 /* UniqueBoxName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueBoxName.swift; sourceTree = "<group>"; };
 		646DE5A61FF5A9C5009E3006 /* MedUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedUsed.swift; sourceTree = "<group>"; };
 		64787AC020C71A88003FE22A /* Medication_Inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Medication_Inventory.json; sourceTree = "<group>"; };
 		64787AC220C71AA3003FE22A /* Medication_Inventory_copy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Medication_Inventory_copy.json; sourceTree = "<group>"; };
@@ -63,6 +67,10 @@
 		649CDAC91F885669007C5FC1 /* MedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
 		649D1B69203B9DB90028C7A4 /* ExpMedication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpMedication.swift; sourceTree = "<group>"; };
 		649E87391F8EB50C00EF2230 /* MedUsedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedUsedVC.swift; sourceTree = "<group>"; };
+		649F934B215A7D3C009A9D4F /* TruckCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckCelll.swift; sourceTree = "<group>"; };
+		649F934D215A8CD8009A9D4F /* BoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCell.swift; sourceTree = "<group>"; };
+		649F934F215C27AF009A9D4F /* TruckName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckName.swift; sourceTree = "<group>"; };
+		649F9351215C2D1F009A9D4F /* BoxName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxName.swift; sourceTree = "<group>"; };
 		64A618161E6F584700AEA888 /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		64A618181E6F5A7900AEA888 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		64A6181A1E6F5C5500AEA888 /* ListOfMedBoxesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfMedBoxesVC.swift; sourceTree = "<group>"; };
@@ -129,11 +137,13 @@
 			children = (
 				647DF5B51F86AFB0001E478D /* Medication.swift */,
 				646DE5A01FF42A92009E3006 /* MedName.swift */,
-				646DE5A21FF545D8009E3006 /* TruckName.swift */,
-				646DE5A41FF545EC009E3006 /* BoxName.swift */,
+				646DE5A21FF545D8009E3006 /* UniqueTruckName.swift */,
+				646DE5A41FF545EC009E3006 /* UniqueBoxName.swift */,
 				646DE5A61FF5A9C5009E3006 /* MedUsed.swift */,
 				649D1B69203B9DB90028C7A4 /* ExpMedication.swift */,
 				642F012D20826295003F4C31 /* UniqueMedName.swift */,
+				649F934F215C27AF009A9D4F /* TruckName.swift */,
+				649F9351215C2D1F009A9D4F /* BoxName.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +156,8 @@
 				649CDAC91F885669007C5FC1 /* MedCell.swift */,
 				641247D81F89216300B8D132 /* LogInVC.xib */,
 				64F75F272055C97300EBF5D4 /* ExpMedCell.swift */,
+				649F934B215A7D3C009A9D4F /* TruckCelll.swift */,
+				649F934D215A8CD8009A9D4F /* BoxCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,23 +272,27 @@
 				647DAC3A1E6F4B6500A25B9B /* AppDelegate.swift in Sources */,
 				64A618251E6F5D0B00AEA888 /* TruckInventoryVC.swift in Sources */,
 				649CDACA1F885669007C5FC1 /* MedCell.swift in Sources */,
-				646DE5A51FF545EC009E3006 /* BoxName.swift in Sources */,
+				649F934C215A7D3C009A9D4F /* TruckCelll.swift in Sources */,
+				646DE5A51FF545EC009E3006 /* UniqueBoxName.swift in Sources */,
 				646DE5A11FF42A92009E3006 /* MedName.swift in Sources */,
 				64A6181D1E6F5C8F00AEA888 /* ListOfTrucksVC.swift in Sources */,
 				642F012E20826295003F4C31 /* UniqueMedName.swift in Sources */,
 				64A618191E6F5A7900AEA888 /* MainVC.swift in Sources */,
+				649F934E215A8CD8009A9D4F /* BoxCell.swift in Sources */,
 				647DF5B61F86AFB0001E478D /* Medication.swift in Sources */,
 				647DF5B81F86B933001E478D /* DataService.swift in Sources */,
 				647DF5BC1F86E235001E478D /* AuthService.swift in Sources */,
 				641247D91F89216300B8D132 /* LogInVC.swift in Sources */,
 				649D1B6A203B9DB90028C7A4 /* ExpMedication.swift in Sources */,
+				649F9352215C2D1F009A9D4F /* BoxName.swift in Sources */,
 				64F75F282055C97300EBF5D4 /* ExpMedCell.swift in Sources */,
 				646DE5A71FF5A9C5009E3006 /* MedUsed.swift in Sources */,
-				646DE5A31FF545D8009E3006 /* TruckName.swift in Sources */,
+				646DE5A31FF545D8009E3006 /* UniqueTruckName.swift in Sources */,
 				64A618211E6F5CD600AEA888 /* MedUsedReplacedVC.swift in Sources */,
 				649E873A1F8EB50C00EF2230 /* MedUsedVC.swift in Sources */,
 				64A6181B1E6F5C5500AEA888 /* ListOfMedBoxesVC.swift in Sources */,
 				64A618231E6F5CF000AEA888 /* OutdatesVC.swift in Sources */,
+				649F9350215C27AF009A9D4F /* TruckName.swift in Sources */,
 				64A6181F1E6F5CAF00AEA888 /* MedInventoryVC.swift in Sources */,
 				64A618171E6F584700AEA888 /* MyButton.swift in Sources */,
 				647DF5BA1F86BBA8001E478D /* Constants.swift in Sources */,
@@ -415,7 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.EdwardGreene.EMS-Med-Management";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -430,7 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.EdwardGreene.EMS-Med-Management";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

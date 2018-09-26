@@ -20,6 +20,8 @@ class DataService {
     var medsUsed = [Medication]() // Meds used on a call
     var expiringMeds = [ExpMedication]() // Expiring meds
     var medExist = [Medication]() // Does med with new expDate already exist
+    var trucks = [TruckName]()
+    var boxs = [BoxName]()
     var distinctMedNames = [String]()
     var distinctTruckNames = [String]()
     var distinctBoxNames = [String]()
@@ -33,7 +35,7 @@ class DataService {
         let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
         
         // Create the request
-        // Get all medications (GET /api/v1/medication
+        // Get all medications (GET /api/v1/medication)
         guard let URL = URL(string: GET_ALL_MEDS_URL) else {return}
         var request = URLRequest(url: URL)
         request.httpMethod = "GET"
@@ -223,13 +225,12 @@ class DataService {
     // GET med used on a call
     func getMedUsed(_ name: String, truck: String, box: String) {
         medsUsed = []
-        // print("These are the variables passed in: \(name) \(truck) \(box)")
+        
         let sessionConfig = URLSessionConfiguration.default
         
         let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
         
         guard let URL = URL(string: "\(GET_MED_USED)/\(name)" + "/" + "\(truck)" + "/" + "\(box)") else { return }
-        print(URL)
         var request = URLRequest(url: URL)
         request.httpMethod = "GET"
         
@@ -245,7 +246,7 @@ class DataService {
                 }
             } else {
                 // Failure
-                print("URL Session Task Failed: \(error?.localizedDescription)")
+                print("URL Session Task Failed: \(String(describing: error?.localizedDescription))")
             }
         })
         task.resume()
@@ -269,7 +270,6 @@ class DataService {
                 let statusCode = (response as! HTTPURLResponse).statusCode
                 print("URL Session Task In doesMedExist Succeeded: HTTP \(statusCode)")
                 // Parse JSON data
-                print("The data is: ", data)
                 if let data = data {
                     self.medExist = Medication.parseMedicationJSONData(data: data)
                     print("MedExist: ",self.medExist)
@@ -277,7 +277,7 @@ class DataService {
                 }
             } else {
                 // Failure
-                print("URL Session Task Failed: \(error?.localizedDescription)")
+                print("URL Session Task Failed: \(String(describing: error?.localizedDescription))")
             }
         })
         task.resume()
@@ -301,7 +301,194 @@ class DataService {
                 print("URL Session Task in DELETE Succeeded: HTTP \(statusCode)")
             } else {
                 // Failure
-                print("URL Session Task in DELETE Failed: \(error?.localizedDescription)")
+                print("URL Session Task in DELETE Failed: \(String(describing: error?.localizedDescription))")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
+    // POST add a new truck
+    func addNewTruck(_ name: String, completion: @escaping callback) {
+        
+        // Construct JSON
+        let json: [String: Any] = [
+            "name": name,
+        ]
+        
+        do {
+            // Serialize JSON
+            let jsonData = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+            
+            let sessionConfig = URLSessionConfiguration.default
+            
+            let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+            
+            guard let URL = URL(string: POST_ADD_NEW_TRUCK) else { return }
+            var request = URLRequest(url: URL)
+            request.httpMethod = "POST"
+            //   Commented out until AuthService is implemented.
+            //            guard let token = AuthService.instance.authToken else {
+            //                completion(false)
+            //                return
+            //            }
+            //
+            //            request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            request.httpBody = jsonData
+            
+            let task = session.dataTask(with: request, completionHandler:  { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+                if (error == nil) {
+                    // Success
+                    // Check for status code 200 here. If it's not 200, then
+                    // authenication was not successful. If it is, we're done
+                    let statusCode = (response as! HTTPURLResponse).statusCode
+                    print("URL Session task succeeded: HTTP \(statusCode)")
+                    if statusCode != 200 {
+                        completion(false)
+                        return
+                    } else {
+                        //self.getAllMedications()
+                        completion(true)
+                    }
+                } else {
+                    // Failure
+                    print("URL Session Task Failed: \(error!.localizedDescription)")
+                    completion(false)
+                }
+            })
+            task.resume()
+            session.finishTasksAndInvalidate()
+            
+        } catch let err {
+            completion(false)
+            print(err)
+        }
+    }
+    
+    // GET all trucks
+    func getAllTrucks() {
+        let sessionConfig = URLSessionConfiguration.default
+        
+        // Create session, and optionally set a URLSessionDelegate
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        // Create the request
+        // Get all trucks (GET /api/v1/truck)
+        guard let URL = URL(string: "\(GET_ALL_TRUCKS_URL)") else {return}
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task Succeeded: HTTP \(statusCode)")
+                
+                if let data = data {
+                    self.trucks = TruckName.parseTruckNameJSONData(data: data)
+                    print("Trucks: ", self.trucks)
+                    self.delegate?.medicationsLoaded()
+                    
+                }
+            }
+            else {
+                // Failure
+                print("URL Session Task Failed: \(error!.localizedDescription)")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
+    // POST add a new box
+    func addNewBox(_ name: String, completion: @escaping callback) {
+        
+        // Construct JSON
+        let json: [String: Any] = [
+            "name": name,
+            ]
+        
+        do {
+            // Serialize JSON
+            let jsonData = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+            
+            let sessionConfig = URLSessionConfiguration.default
+            
+            let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+            
+            guard let URL = URL(string: POST_ADD_NEW_BOX) else { return }
+            var request = URLRequest(url: URL)
+            request.httpMethod = "POST"
+            //   Commented out until AuthService is implemented.
+            //            guard let token = AuthService.instance.authToken else {
+            //                completion(false)
+            //                return
+            //            }
+            //
+            //            request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            request.httpBody = jsonData
+            
+            let task = session.dataTask(with: request, completionHandler:  { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+                if (error == nil) {
+                    // Success
+                    // Check for status code 200 here. If it's not 200, then
+                    // authenication was not successful. If it is, we're done
+                    let statusCode = (response as! HTTPURLResponse).statusCode
+                    print("URL Session task succeeded: HTTP \(statusCode)")
+                    if statusCode != 200 {
+                        completion(false)
+                        return
+                    } else {
+                        //self.getAllMedications()
+                        completion(true)
+                    }
+                } else {
+                    // Failure
+                    print("URL Session Task Failed: \(error!.localizedDescription)")
+                    completion(false)
+                }
+            })
+            task.resume()
+            session.finishTasksAndInvalidate()
+            
+        } catch let err {
+            completion(false)
+            print(err)
+        }
+    }
+    
+    // GET all boxes
+    func getAllBoxs() {
+        let sessionConfig = URLSessionConfiguration.default
+        
+        // Create session, and optionally set a URLSessionDelegate
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        // Create the request
+        // Get all boxs (GET /api/v1/box)
+        guard let URL = URL(string: "\(GET_ALL_BOXS_URL)") else {return}
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task Succeeded: HTTP \(statusCode)")
+                
+                if let data = data {
+                    self.boxs = BoxName.parseBoxNameJSONData(data: data)
+                    // self.delegate?.medicationsLoaded()
+                    
+                }
+            }
+            else {
+                // Failure
+                print("URL Session Task Failed: \(error!.localizedDescription)")
             }
         })
         task.resume()
@@ -329,7 +516,7 @@ class DataService {
                 }
             } else {
                 // Failure
-                print("URL Session Task Failed: \(error?.localizedDescription)")
+                print("URL Session Task Failed: \(String(describing: error?.localizedDescription))")
             }
         })
         task.resume()
@@ -352,12 +539,12 @@ class DataService {
                 print("URL Session Task Succeeded: HTTP \(statusCode)")
                 // Parse JSON data
                 if let data = data {
-                    self.distinctTruckNames = TruckName.parseTruckNameJSONData(data: data)
+                    self.distinctTruckNames = UniqueTruckName.parseTruckNameJSONData(data: data)
 //                    self.delegate?.medicationsLoaded() // May need to institute a specific function (distinctTruckNamesLoaded())
                 }
             } else {
                 // Failure
-                print("URL Session Task Failed: \(error?.localizedDescription)")
+                print("URL Session Task Failed: \(String(describing: error?.localizedDescription))")
             }
         })
         task.resume()
@@ -380,12 +567,12 @@ class DataService {
                 print("URL Session Task Succeeded: HTTP \(statusCode)")
                 // Parse JSON data
                 if let data = data {
-                    self.distinctBoxNames = BoxName.parseBoxNameJSONData(data: data)
+                    self.distinctBoxNames = UniqueBoxName.parseBoxNameJSONData(data: data)
 //                    self.delegate?.medicationsLoaded() // May need to institute a specific function (distinctBoxNamesLoaded())
                }
             } else {
                 // Failure
-                print("URL Session Task Failed: \(error?.localizedDescription)")
+                print("URL Session Task Failed: \(String(describing: error?.localizedDescription))")
             }
         })
         task.resume()
