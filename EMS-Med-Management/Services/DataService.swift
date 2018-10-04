@@ -10,6 +10,7 @@ import Foundation
 
 protocol DataServiceDelegate: class {
     func medicationsLoaded()
+    func boxsLoaded()
 }
 
 class DataService {
@@ -49,7 +50,6 @@ class DataService {
                 if let data = data {
                     self.meds = Medication.parseMedicationJSONData(data: data)
                     self.delegate?.medicationsLoaded()
-                
                 }
             }
             else {
@@ -83,7 +83,6 @@ class DataService {
                 if let data = data {
                     self.expiringMeds = ExpMedication.parseExpMedicationJSONData(data: data)
                     self.delegate?.medicationsLoaded()
-                    
                 }
             } else {
                 // Failure
@@ -92,7 +91,6 @@ class DataService {
         })
         task.resume()
         session.finishTasksAndInvalidate()
-        
     }
     
     // POST add a new medication
@@ -284,6 +282,7 @@ class DataService {
         session.finishTasksAndInvalidate()
     }
     
+    // DELETE delete a med by ID
     func deleteMed(_ id: String, completion: @escaping callback){
         let sessionConfig = URLSessionConfiguration.default
         
@@ -299,9 +298,37 @@ class DataService {
                 // Success
                 let statusCode = (response as! HTTPURLResponse).statusCode
                 print("URL Session Task in DELETE Succeeded: HTTP \(statusCode)")
+                completion(true)
             } else {
                 // Failure
                 print("URL Session Task in DELETE Failed: \(String(describing: error?.localizedDescription))")
+                completion(false)
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
+    func deleteTruck(_ id: String, completion: @escaping callback){
+        let sessionConfig = URLSessionConfiguration.default
+        
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        guard let URL = URL(string: "\(DELETE_TRUCK)/\(id)") else {return}
+        
+        var request = URLRequest(url: URL)
+        request.httpMethod = "DELETE"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task in DELETE Succeeded: HTTP \(statusCode)")
+                completion(true)
+            } else {
+                // Failure
+                print("URL Session Task in DELETE Failed: \(String(describing: error?.localizedDescription))")
+                completion(false)
             }
         })
         task.resume()
@@ -390,7 +417,6 @@ class DataService {
                     self.trucks = TruckName.parseTruckNameJSONData(data: data)
                     print("Trucks: ", self.trucks)
                     self.delegate?.medicationsLoaded()
-                    
                 }
             }
             else {
@@ -461,8 +487,36 @@ class DataService {
         }
     }
     
+    func deleteBox(_ id: String, completion: @escaping callback){
+        let sessionConfig = URLSessionConfiguration.default
+        
+        let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+        
+        guard let URL = URL(string: "\(DELETE_BOX)/\(id)") else {return}
+        print("URL: ", URL)
+        var request = URLRequest(url: URL)
+        request.httpMethod = "DELETE"
+        
+        let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+            if (error == nil) {
+                // Success
+                // self.delegate?.boxsLoaded()
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("URL Session Task in DELETE Succeeded: HTTP \(statusCode)")
+                completion(true)
+            } else {
+                // Failure
+                completion(false)
+                print("URL Session Task in DELETE Failed: \(String(describing: error?.localizedDescription))")
+            }
+        })
+        task.resume()
+        session.finishTasksAndInvalidate()
+    }
+    
     // GET all boxes
-    func getAllBoxs() {
+    func getAllBoxs(completion: @escaping callback) {
+        //boxs = []
         let sessionConfig = URLSessionConfiguration.default
         
         // Create session, and optionally set a URLSessionDelegate
@@ -479,16 +533,21 @@ class DataService {
                 // Success
                 let statusCode = (response as! HTTPURLResponse).statusCode
                 print("URL Session Task Succeeded: HTTP \(statusCode)")
+                completion(true)
+                
                 
                 if let data = data {
                     self.boxs = BoxName.parseBoxNameJSONData(data: data)
-                    // self.delegate?.medicationsLoaded()
-                    
+                    print("Boxs have loaded")
+                    //print("Boxs array contains: ", self.boxs)
+                    //self.delegate?.boxsLoaded()                    
                 }
             }
             else {
                 // Failure
                 print("URL Session Task Failed: \(error!.localizedDescription)")
+                completion(false)
+                
             }
         })
         task.resume()

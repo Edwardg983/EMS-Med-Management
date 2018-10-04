@@ -97,6 +97,12 @@ extension MedUsedVC: DataServiceDelegate {
             self.tableView.reloadData()
         }
     }
+    
+    func boxsLoaded() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension MedUsedVC: UITableViewDelegate, UITableViewDataSource {

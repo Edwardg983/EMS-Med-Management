@@ -115,6 +115,12 @@ extension OutdatesVC: DataServiceDelegate {
             self.tableView.reloadData()
         }
     }
+    
+    func boxsLoaded() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension OutdatesVC: UITableViewDelegate, UITableViewDataSource {

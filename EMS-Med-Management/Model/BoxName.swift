@@ -32,7 +32,10 @@ class BoxName: NSObject {
         } catch let err {
             print(err)
         }
-        print("Boxs array: ", boxsArray)
         return boxsArray
+    }
+    
+    override var description:String {
+        return "name: \(self.name) \nId: \(self.id) \n"
     }
 }

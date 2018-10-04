@@ -56,6 +56,12 @@ let PUT_UPDATE_MED_USED = "\(BASE_API_URL)/medication/update"
 // DELETE delete med by ID
 let DELETE_MED = "\(BASE_API_URL)/medication"
 
+// DELETE delete truck by ID
+let DELETE_TRUCK = "\(BASE_API_URL)/truck"
+
+// DELETE delete box by ID
+let DELETE_BOX = "\(BASE_API_URL)/box"
+
 // Boolean auth UserDefaults keys
 let DEFAULTS_REGISTERED = "isRegistered"
 let DEFAULTS_AUTHENTICATED = "isAuthenicated"

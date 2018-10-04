@@ -62,6 +62,12 @@ extension MedInventoryVC: DataServiceDelegate {
             self.tableView.reloadData()
         }
     }
+    
+    func boxsLoaded() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension MedInventoryVC: UITableViewDelegate, UITableViewDataSource {
@@ -80,6 +86,5 @@ extension MedInventoryVC: UITableViewDelegate, UITableViewDataSource {
         } else {
             return UITableViewCell()
         }
-    }
- 
+    } 
 }

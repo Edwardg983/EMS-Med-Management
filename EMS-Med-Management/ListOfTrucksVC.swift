@@ -13,7 +13,9 @@ class ListOfTrucksVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var txtNameLbl: UITextField!
+    
     var dataService = DataService.instance
+    var truck = TruckName()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,14 @@ class ListOfTrucksVC: UIViewController {
     }
     
     @IBAction func removeBtnPressed(_ sender: Any) {
+        
+        dataService.deleteTruck(truck.id) { Success in
+            if Success {
+                print("Med was successfully deleted")
+            } else {
+                print("An Error occurred while deleteing the med")
+            }
+        }
     }
     @IBAction func addBtnTapped(_ sender: Any) {
         dataService.addNewTruck(txtNameLbl.text!) { Success in
@@ -65,10 +75,19 @@ extension ListOfTrucksVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        truck = dataService.trucks[indexPath.row]
+    }
 }
 
 extension ListOfTrucksVC: DataServiceDelegate {
     func medicationsLoaded() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    func boxsLoaded() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }

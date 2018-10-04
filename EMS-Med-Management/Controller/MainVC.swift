@@ -32,4 +32,7 @@ class MainVC: UIViewController {
 extension MainVC: DataServiceDelegate {
     func medicationsLoaded() {
     }
+    func boxsLoaded() {
+        
+    }
 }

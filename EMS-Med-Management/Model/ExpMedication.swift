@@ -61,5 +61,4 @@ class ExpMedication: NSObject {
     override var description:String {
         return "name: \(self.name) \nExp Date: \(self.expDate) \nQuantity: \(self.quantity) \nTruck: \(self.truck) \nBox: \(self.box) \n"
     }
-    
 }
